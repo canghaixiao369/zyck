@@ -3,7 +3,7 @@
 ```
 思维没有边界 一切皆有可能
 ```
-[**TG交流群**](https://t.me/catvodtv_offical)
+:rocket:[**TG交流群**](https://t.me/catvodtv_offical)
 
 ![logo](app/src/main/res/drawable-xhdpi/app_icon.png)
 
