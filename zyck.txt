@@ -1,21 +1,21 @@
 { "urls": [
 	
-{ "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/yingshi.json", "name": "🌸自用影视🌸" },
+{ "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/yingshi.json", "name": "🌸沧海笑整理-影视🌸" },
 
-{ "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/et/main/et.json", "name": "💓自用儿童💓" },
+{ "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/et/main/et.json", "name": "💓沧海笑整理-儿童💓" },
 
-{ "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/ys.json", "name": "🌷自用央视🌷" },
+{ "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/ys.json", "name": "🌷沧海笑整理-央视🌷" },
 
-{ "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/bili.json", "name": "💞自用哔哩💞" },
+{ "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/bili.json", "name": "💞沧海笑整理-哔哩💞" },
 
-{ "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/MV.json", "name": "🌺自用MV🌺" },
+{ "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/MV.json", "name": "🌺沧海笑整理-MV🌺" },
 
-{ "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/dj.json", "name": "💕自用短剧💕" },
+{ "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/dj.json", "name": "💕沧海笑整理-短剧💕" },
 
-{ "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/yp.json", "name": "🎢自用音乐🎢" },
+{ "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/yp.json", "name": "🎢沧海笑整理-音乐🎢" },
 
-{ "url": "http://我不是.肥猫.live/接口禁止贩卖", "name": "🐼肥猫在线🐼" },
+{ "url": "http://我不是.肥猫.live/接口禁止贩卖", "name": "🐼沧海笑整理-肥猫在线🐼" },
 
-{ "url": "http://饭太硬.top/tv", "name": "‍🐝饭太硬在线🐝" },
+{ "url": "http://饭太硬.top/tv", "name": "‍🐝沧海笑整理-饭太硬在线🐝" },
 
-{ "url": "https://神器每日推送.tk/pz.json", "name": "🌱神器在线🌱" }]}
+{ "url": "https://神器每日推送.tk/pz.json", "name": "🌱沧海笑整理-神器在线🌱" }]}
