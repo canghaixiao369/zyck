@@ -21,6 +21,19 @@
             "filterable": 1,
             "jar": "./jar/Yoursmile.jar"
         },
+
+        {
+            "key": "bili短剧",
+            "name": "🅱┃哔哩┃短剧",
+            "type": 3,
+            "api": "csp_Bili",
+            "searchable": 0,
+            "quickSearch": 0,
+            "filterable": 1,
+            "ext": "./json/Bili短剧.json",
+            "jar": "./jar/spider.jar"
+        },
+
         {
             "key": "YQK_spider",
             "name": "💐┃短剧┃一起2💐",
