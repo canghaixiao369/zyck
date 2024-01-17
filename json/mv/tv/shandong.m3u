@@ -1,0 +1,19 @@
+
+#EXTM3U
+
+#EXTINF:-1 tvg-id="38" tvg-name="山东地方" tvg-logo="https://codeberg.org/Nibrand/itv/raw/branch/main/tvicon/WS-SD.png" group-title="地方-山东",山东生活
+http://27.210.71.134:9901/tsfile/live/1007_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="38" tvg-name="山东地方" tvg-logo="https://codeberg.org/Nibrand/itv/raw/branch/main/tvicon/WS-SD.png" group-title="地方-山东",山东公共
+http://27.210.71.134:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="38" tvg-name="山东地方" tvg-logo="https://codeberg.org/Nibrand/itv/raw/branch/main/tvicon/WS-SD.png" group-title="地方-山东",山东综艺
+http://222.175.159.226:808/hls/202325/index.m3u8
+#EXTINF:-1 tvg-id="38" tvg-name="山东地方" tvg-logo="https://codeberg.org/Nibrand/itv/raw/branch/main/tvicon/WS-SD.png" group-title="地方-山东",山东农科
+http://27.210.71.134:9901/tsfile/live/1012_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="38" tvg-name="山东地方" tvg-logo="https://codeberg.org/Nibrand/itv/raw/branch/main/tvicon/WS-SD.png" group-title="地方-山东",山东体育
+http://27.210.71.134:9901/tsfile/live/0114_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="38" tvg-name="山东地方" tvg-logo="https://codeberg.org/Nibrand/itv/raw/branch/main/tvicon/WS-SD.png" group-title="地方-山东",山东齐鲁
+http://27.210.71.134:9901/tsfile/live/faacts/1001_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="38" tvg-name="山东地方" tvg-logo="https://codeberg.org/Nibrand/itv/raw/branch/main/tvicon/WS-SD.png" group-title="地方-山东",山东文旅
+http://182.45.245.62:808/hls/202323/index.m3u8
+#EXTINF:-1 tvg-id="38" tvg-name="山东地方" tvg-logo="https://codeberg.org/Nibrand/itv/raw/branch/main/tvicon/WS-SD.png" group-title="地方-山东",山东少儿
+http://182.45.245.62:808/hls/202329/index.m3u8
