@@ -5,7 +5,7 @@
 ```
 :rocket:[**TG交流群**](https://t.me/catvodtv_offical)
 
-![logo](app/src/main/res/drawable-xhdpi/app_icon.png)
+![logo](blob:https://github.com/47077e13-ddf0-4b8a-9c07-2b363309252f)
 
 
 
