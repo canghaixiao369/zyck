@@ -11,7 +11,14 @@
     ],
     "spider": "./jar/spider.jar",
     "sites": [
-               
+
+               {
+            "key": "kqmv",
+            "name": "👰 酷奇MV",
+            "type": 3,
+            "api": "../JS/js/ddmv_open.js"
+        },
+	    
 {
     "key": "酷奇MV",
     "name": "🎸酷奇MV",
