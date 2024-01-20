@@ -1,7 +1,7 @@
 {
     "lives": [
         {
-            "name": "我的直播",
+            "name": "live",
             "type": 0,
             "url": "./tv/mtv.txt",
             "playerType": 1,
@@ -11,12 +11,13 @@
     ],
     "spider": "./jar/spider.jar",
     "sites": [
-
-	    {
+               
+{
     "key": "酷奇MV",
     "name": "🎸酷奇MV",
     "type": 3,
     "api": "csp_XBPQ",
+    "jar": "./jar/Yoursmile.jar",
     "searchable": 0,
     "quickSearch": 0,
     "filterable": 1,
@@ -34,19 +35,22 @@
     }
 },
 
-        {
+           {
             "key": "drpy_js_酷狗MV",
             "name": "🎞️┃MV┃酷狗",
             "type": 3,
             "api": "./JS/js/apiv19drpy2.min.js",
-            "ext": "./JS/lib/酷狗MV.js"
+            "ext": "./JS/lib/酷狗MV.js", 
+            "jar": "./jar/f.jar"
         },
+        
         {
             "key": "drpy_js_酷奇MV",
             "name": "🎞️┃MV┃酷奇",
             "type": 3,
             "api": "./JS/js/apiv19drpy2.min.js",
-            "ext": "./JS/lib/酷奇MV.js"
+            "ext": "./JS/lib/酷奇MV.js", 
+            "jar": "./jar/f.jar"
         },
         
         
@@ -71,7 +75,6 @@
             "quickSearch": 1,
             "filterable": 1
         },
-        
         
         {
             "key": "MV_vod",
