@@ -16,16 +16,14 @@
             "name": "🎞️┃MV┃酷狗",
             "type": 3,
             "api": "./JS/js/apiv19drpy2.min.js",
-            "ext": "./JS/lib/酷狗MV.js",
-	    "jar": "./jar/f.jar"
+            "ext": "./JS/lib/酷狗MV.js"
         },
         {
             "key": "drpy_js_酷奇MV",
             "name": "🎞️┃MV┃酷奇",
             "type": 3,
             "api": "./JS/js/apiv19drpy2.min.js",
-            "ext": "./JS/lib/酷奇MV.js",
-	   "jar": "./jar/f.jar"
+            "ext": "./JS/lib/酷奇MV.js"
         },
         
         
