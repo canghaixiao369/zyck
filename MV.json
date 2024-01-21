@@ -16,7 +16,7 @@
             "key": "kqmv",
             "name": "👰 酷奇MV",
             "type": 3,
-            "api": "../JS/js/ddmv_open.js"
+            "api": "./JS/js/ddmv_open.js"
         },
 	    
 {
