@@ -128,6 +128,21 @@
                 "分类url": "https://www.nkvod.com/show/{cateId}--------{catePg}---{year}.html"
             }
         },
+
+        {
+            "key": "看他",
+            "name": "🌹看他影院",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "jar": "./jar/yydf.jar",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+                "分类url": "https://kanta.vip/vodshow/{cateId}-{area}-------{catePg}---{year}.html",
+                "分类": "电影$1#剧集$2#动漫$4#综艺$3"
+            }
+        },
         
         {
     "key": "77",
