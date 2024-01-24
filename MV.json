@@ -12,12 +12,7 @@
     "spider": "./jar/spider.jar",
     "sites": [
 
-               {
-            "key": "kqmv",
-            "name": "👰 酷奇MV",
-            "type": 3,
-            "api": "./JS/js/ddmv_open.js"
-        },
+             
 	    
 {
     "key": "酷奇MV",
@@ -60,7 +55,13 @@
             "jar": "./jar/f.jar"
         },
         
-        
+          {
+            "key": "kqmv",
+            "name": "👰 酷奇MV",
+            "type": 3,
+            "api": "./JS/js/ddmv_open.js"
+        },
+	    
         {
 		"key": "py_kuwo",
 		"name": "🎵酷我Mv(PY)",
