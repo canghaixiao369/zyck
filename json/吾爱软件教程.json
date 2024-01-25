@@ -17,7 +17,7 @@
             "type_id": "alist+WebDav"
         },
         {
-            "type_name": "TVBox修改",
+            "type_name": "TVBox修改教程",
             "type_id": "TVBox修改"
         },
         {
@@ -145,6 +145,11 @@
                 "key": "tid",
                 "name": "分类",
                 "value": [
+                    {
+                        "n": "全部",
+                        "v": "0"
+                    },
+                    
                     {
                         "n": "TVBox内置",
                         "v": "TVBox内置"
