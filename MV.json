@@ -11,6 +11,30 @@
     ],
     "spider": "./jar/spider.jar",
     "sites": [
+
+	     {
+            "key": "歌手",
+            "name": "🅱┃哔哩┃歌手",
+            "type": 3,
+            "api": "csp_Bili",
+            "searchable": 0,
+            "quickSearch": 0,
+            "filterable": 1,
+            "ext": "./json/吾爱歌手.json",
+            "jar": "./jar/spider.jar"
+        },
+        
+        {
+            "key": "音乐合集",
+            "name": "🅱┃哔哩┃音乐合集",
+            "type": 3,
+            "api": "csp_Bili",
+            "searchable": 0,
+            "quickSearch": 0,
+            "filterable": 1,
+            "ext": "./json/吾爱音乐合集.json",
+            "jar": "./jar/spider.jar"
+        },
                
                {
             "key": "kqmv",
@@ -72,29 +96,7 @@
 		"ext": "./py/py_kuWo.py"
 	},
 	
-	 {
-            "key": "歌手",
-            "name": "🅱┃哔哩┃歌手",
-            "type": 3,
-            "api": "csp_Bili",
-            "searchable": 0,
-            "quickSearch": 0,
-            "filterable": 1,
-            "ext": "./json/吾爱歌手.json",
-            "jar": "./jar/spider.jar"
-        },
-        
-        {
-            "key": "音乐合集",
-            "name": "🅱┃哔哩┃音乐合集",
-            "type": 3,
-            "api": "csp_Bili",
-            "searchable": 0,
-            "quickSearch": 0,
-            "filterable": 1,
-            "ext": "./json/吾爱音乐合集.json",
-            "jar": "./jar/spider.jar"
-        },
+	
         
         {
             "key": "da_ry",
