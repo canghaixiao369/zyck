@@ -1,7 +1,7 @@
 {
     "lives": [
         {
-            "name": "我的直播",
+            "name": "live",
             "type": 0,
             "url": "./tv/mtv.txt",
             "playerType": 1,
@@ -11,7 +11,18 @@
     ],
     "spider": "./jar/spider.jar",
     "sites": [
-       
+        {
+            "key": "车载DJ",
+            "name": "🅱┃哔哩┃车载DJ",
+            "type": 3,
+            "api": "csp_Bili",
+            "searchable": 0,
+            "quickSearch": 0,
+            "filterable": 1,
+            "ext": "./json/吾爱车载DJ.json",
+            "jar": "./jar/spider.jar"
+        },
+        
         {
             "key": "车载DJ2",
             "name": "🅱┃哔哩┃车载DJ2",
@@ -25,16 +36,29 @@
         },
         
         {
-            "key": "车载DJ",
-            "name": "🅱┃哔哩┃车载DJ",
+            "key": "歌手",
+            "name": "🅱┃哔哩┃歌手",
             "type": 3,
             "api": "csp_Bili",
             "searchable": 0,
             "quickSearch": 0,
             "filterable": 1,
-            "ext": "./json/吾爱车载DJ.json",
+            "ext": "./json/吾爱歌手.json",
             "jar": "./jar/spider.jar"
         },
+        
+        {
+            "key": "音乐合集",
+            "name": "🅱┃哔哩┃音乐合集",
+            "type": 3,
+            "api": "csp_Bili",
+            "searchable": 0,
+            "quickSearch": 0,
+            "filterable": 1,
+            "ext": "./json/吾爱音乐合集.json",
+            "jar": "./jar/spider.jar"
+        },
+        
         
         {
             "key": "bili短剧",
