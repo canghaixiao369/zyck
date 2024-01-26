@@ -44,6 +44,12 @@
       "type_name": "DJ精选",
       "type_id": "DJ"
     }, 
+    
+    {
+      "type_name": "韩国dj舞曲",
+      "type_id": "韩国dj舞曲"
+    },
+    
     {
       "type_name": "越南鼓DJ",
       "type_id": "越南鼓"
