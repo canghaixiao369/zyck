@@ -16,7 +16,7 @@
             "key": "腾讯2",
             "name": "🐥腾讯蛋(官源)",
             "type": 3,
-            "playUrl": "https://jx.xmflv.com/?url=",
+            "playUrl": "http://xiutan.shiyifacai.com/json/qingfeng.php?url=",
             "jar": "./jar/fan1.jar",
             "api": "./JS/lib/drpy.min.js",
             "ext": "./JS/lib/腾云驾雾.js"
