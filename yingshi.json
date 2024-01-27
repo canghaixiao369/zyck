@@ -66,6 +66,7 @@
       "jar": "./jar/c (1).txt",
       "api": "csp_AppYsV2",
       "ext": "http://xiutan.shiyifacai.com/zuoan/api.php/app/",
+      "playUrl": "http://xiutan.shiyifacai.com/json/qingfeng.php?url=",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 0
