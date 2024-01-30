@@ -2,7 +2,7 @@
 	
 { "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/yingshi.json", "name": "🌸沧海笑整理-影视🌸" },
 
-{ "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/et/main/et.json", "name": "💓沧海笑整理-儿童💓" },
+{ "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/et.json", "name": "💓沧海笑整理-儿童💓" },
 
 { "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/ys.json", "name": "🌷沧海笑整理-央视🌷" },
 
