@@ -269,6 +269,7 @@
             "name": "🎅🏻 | 少儿频道1",
             "type": 3,
             "api": "./api/drpy2.min.js",
+            "playUrl": "https://jx.777jiexi.com/player/?url=",
             "ext": "./js/腾讯.js"
         },
         {
@@ -276,6 +277,7 @@
             "name": "👼🏻 | 少儿频道2",
             "type": 3,
             "api": "./api/drpy2.min.js",
+            "playUrl": "http://xiutan.shiyifacai.com/json/qingfeng.php?url=",
             "ext": "./js/忙果.js"
         },
         {
