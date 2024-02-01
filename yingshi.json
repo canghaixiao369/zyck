@@ -66,7 +66,6 @@
       "jar": "./jar/c (1).txt",
       "api": "csp_AppYsV2",
       "ext": "http://xiutan.shiyifacai.com/zuoan/api.php/app/",
-      "playUrl": "http://xiutan.shiyifacai.com/json/qingfeng.php?url=",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 0
@@ -139,8 +138,8 @@
       "searchable": 1,
       "changeable": 1
     },
-
-              {
+        
+        {
     "key": "嘿嘿",
     "name": "💡嘿嘿┃App",
     "type": 3,
@@ -1242,20 +1241,20 @@
             "ext": "./json/电影牛影院.json"
         },
        
-        
         {
-            "key": "csp_Wogg",
-            "name": "💂‍┃阿里┃玩偶",
-            "type": 3,
-            "api": "csp_Wogg",
-            "searchable": 1,
-            "changeable": 0,
-            "ext": {
-                "token": "http://127.0.0.1:9978/file/TVBox/自制/json/token.txt$$$https://wogg.xyz/",
-                "filter": "./json/wogg.json"
-            },
-            "jar": "./jar/ali.jar;md5;5995F4AF461B0969BBF611766ECEB582"
-        },
+      "key": "玩偶哥哥",
+      "name": "┃玩偶4K┃影视",
+      "type": 3,
+      "api": "csp_WoGG",
+      "jar": "./jar/spider.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "ext": "./json/token.txt+4k|auto|fhd$$$https://api.wogg.xyz/$$$弹"
+    },
+        
+        
+        
         {
             "key": "csp_阿里七夜",
             "name": "🔎┃阿里┃七夜",
