@@ -196,6 +196,8 @@ GOOD卡通,https://dqhxk7sbp7xog.cloudfront.net/osmflivech45.m3u8
 童年經典,http://lvbaiducdncmn.inter.iqiyi.com/tslive/c57_lb_211_600_t10/c57_lb_211_600_t10.m3u8?key=0f2a06793124310bce6ba95fc0ac76131
 超燃懷舊經典,http://epg.112114.xyz/douyu/1174353
 大头儿子,#genre#
+
+大头儿子|0111,https://dh5.cntv.myalicdn.com/asp/h5e/hls/2000/0303000a/3/default/bc70b18641d140b8a0d2aac727f1af85/2000.m3u8
 大头儿子|01,https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/252a7fe7786645b084271751a3f75725/1200.m3u8
 大头儿子|02,https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/8c6227ce3d1d4c9297d5cfd9a08a4fa9/1200.m3u8
 大头儿子|03,https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1a86eb58a9e04c34a87f8c883932cfa2/1200.m3u8
