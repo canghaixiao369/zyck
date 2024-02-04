@@ -1758,6 +1758,40 @@
         }
       }
     },
+
+       {
+    "name": "BL",
+    "type": 1,
+    "url": "https://vip.bljiex.com/?v=",
+    "ext": {
+        "flag": [
+            "imgo",
+            "migu",
+            "qq",
+            "qiyi",
+            "mgtv",
+            "bilibili",
+            "youku"
+        ]
+    }
+},
+      {
+    "name": "剖云",
+    "type": 1,
+    "url": "https://www.pouyun.com/?url=",
+    "ext": {
+        "flag": [
+            "imgo",
+            "migu",
+            "qq",
+            "qiyi",
+            "mgtv",
+            "bilibili",
+            "youku"
+        ]
+    }
+}, 
+        
         {
             "name": "虾米",
             "type": 0,
