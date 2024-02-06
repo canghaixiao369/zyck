@@ -15,7 +15,7 @@
             "key": "腾讯2",
             "name": "🐥腾讯蛋(官源)",
             "type": 3,
-            "playUrl": "http://xiutan.shiyifacai.com/json/qingfeng.php?url=",
+            "playUrl": "https://www.pouyun.com/?url=",
             "jar": "./jar/fan1.jar",
             "api": "./JS/lib/drpy.min.js",
             "ext": "./JS/lib/腾云驾雾.js"
@@ -24,7 +24,7 @@
             "key": "drpy_js_优酷1",
             "name": "🐥优酷蛋(官源)",
             "type": 3,
-            "playUrl": "https://jx.xmflv.com/?url=",
+            "playUrl": "https://www.pouyun.com/?url=",
             "jar": "./jar/fan1.jar",
             "api": "./JS/lib/drpy.min.js",
             "ext": "./JS/js/youku.js"
@@ -34,7 +34,7 @@
             "name": "🐥奇艺蛋(官源)",
             "type": 3,
             "jar": "./jar/fan1.jar",
-            "playUrl": "https://jx.xmflv.com/?url=",
+            "playUrl": "https://www.pouyun.com/?url=",
             "api": "./JS/lib/drpy.min.js",
             "ext": "./JS/js/奇珍异兽.js"
         },
@@ -42,7 +42,7 @@
             "key": "drpy_js_百忙无果",
             "name": "芒果蛋[官源]",
             "type": 3,
-            "playUrl": "https://jx.xmflv.com/?url=",
+            "playUrl": "https://www.pouyun.com/?url=",
             "jar": "./jar/fan1.jar",
             "api": "./JS/lib/drpy.min.js",
             "ext": "./JS/js/百忙无果.js"
