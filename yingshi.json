@@ -34,7 +34,7 @@
             "name": "🐥奇艺蛋(官源)",
             "type": 3,
             "jar": "./jar/fan1.jar",
-            "playUrl": "https://www.pouyun.com/?url=",
+            "playUrl": "https://jx.xmflv.com/?url=",
             "api": "./JS/lib/drpy.min.js",
             "ext": "./JS/js/奇珍异兽.js"
         },
@@ -42,7 +42,7 @@
             "key": "drpy_js_百忙无果",
             "name": "芒果蛋[官源]",
             "type": 3,
-            "playUrl": "https://www.pouyun.com/?url=",
+            "playUrl": "https://jx.xmflv.com/?url=",
             "jar": "./jar/fan1.jar",
             "api": "./JS/lib/drpy.min.js",
             "ext": "./JS/js/百忙无果.js"
@@ -1720,7 +1720,7 @@
         },
         {
             "name": "剖云",
-            "type": 0,
+            "type": 1,
             "url": "https://www.pouyun.com/?url=",
             "ext": {
                 "flag": [
@@ -2404,7 +2404,7 @@
         },
         {
             "name": "小鱼解析",
-            "type": 1,
+            "type": 0,
             "url": "http://json.84jia.com/home/api?type=ys&uid=335253&key=fjklpqsyCDGMNQRWX8&url="
         },
         {
