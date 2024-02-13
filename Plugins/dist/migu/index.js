@@ -33,7 +33,9 @@ function musicCanPlayFilter(_) {
 }
 async function searchMusic(query, page) {
     const data = await searchBase(query, page, 2);
-    const musics = data.musics.filter(musicCanPlayFilter).map((_) => ({
+    const musics = data.musics
+    // .filter(musicCanPlayFilter)
+    .map((_) => ({
         id: _.id,
         artwork: _.cover,
         title: _.songName,
@@ -91,23 +93,6 @@ async function searchMusicSheet(query, page) {
     return {
         isEnd: +data.pageNo * searchRows >= data.pgt,
         data: musicsheet,
-    };
-}
-async function searchLyric(query, page) {
-    const data = await searchBase(query, page, 7);
-    console.log(data);
-    const lyrics = data.songs.map((result) => ({
-        title: result.title,
-        id: result.id,
-        artist: result.artist,
-        artwork: result.cover,
-        lrc: result.lyrics,
-        album: result.albumName,
-        copyrightId: result.copyrightId
-    }));
-    return {
-        isEnd: +data.pageNo * searchRows >= data.pgt,
-        data: lyrics,
     };
 }
 async function getArtistAlbumWorks(artistItem, page) {
@@ -168,7 +153,9 @@ async function getArtistWorks(artistItem, page, type) {
             },
         })).data || {};
         return {
-            data: musicList.result.results.filter(musicCanPlayFilter).map((_) => ({
+            data: musicList.result.results
+            // .filter(musicCanPlayFilter)
+            .map((_) => ({
                 id: _.songId,
                 artwork: _.picM,
                 title: _.songName,
@@ -234,25 +221,21 @@ async function getMusicSheetInfo(sheet, page) {
     return {
         isEnd,
         musicList: res.items
-            .filter((item) => { var _a; return ((_a = item === null || item === void 0 ? void 0 : item.fullSong) === null || _a === void 0 ? void 0 : _a.vipFlag) === 0; })
-            .map((_) => {
-            var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
-            return ({
-                id: _.id,
-                artwork: ((_a = _.mediumPic) === null || _a === void 0 ? void 0 : _a.startsWith("//"))
-                    ? `http:${_.mediumPic}`
-                    : _.mediumPic,
-                title: _.name,
-                artist: (_f = (_e = (_d = (_c = (_b = _.singers) === null || _b === void 0 ? void 0 : _b.map) === null || _c === void 0 ? void 0 : _c.call(_b, (_) => _.name)) === null || _d === void 0 ? void 0 : _d.join) === null || _e === void 0 ? void 0 : _e.call(_d, ",")) !== null && _f !== void 0 ? _f : "",
-                album: (_h = (_g = _.album) === null || _g === void 0 ? void 0 : _g.albumName) !== null && _h !== void 0 ? _h : "",
-                copyrightId: _.copyrightId,
-                singerId: (_k = (_j = _.singers) === null || _j === void 0 ? void 0 : _j[0]) === null || _k === void 0 ? void 0 : _k.id,
-            });
-        }),
+            // .filter((item) => item?.fullSong?.vipFlag === 0)
+            .map((_) => ({
+            id: _.id,
+            artwork: _.mediumPic?.startsWith("//")
+                ? `http:${_.mediumPic}`
+                : _.mediumPic,
+            title: _.name,
+            artist: _.singers?.map?.((_) => _.name)?.join?.(",") ?? "",
+            album: _.album?.albumName ?? "",
+            copyrightId: _.copyrightId,
+            singerId: _.singers?.[0]?.id,
+        })),
     };
 }
 async function importMusicSheet(urlLike) {
-    var _a, _b, _c, _d;
     let id;
     if (!id) {
         id = (urlLike.match(/https?:\/\/music\.migu\.cn\/v3\/(?:my|music)\/playlist\/([0-9]+)/) || [])[1];
@@ -261,10 +244,10 @@ async function importMusicSheet(urlLike) {
         id = (urlLike.match(/https?:\/\/h5\.nf\.migu\.cn\/app\/v4\/p\/share\/playlist\/index.html\?.*id=([0-9]+)/) || [])[1];
     }
     if (!id) {
-        id = (_a = urlLike.match(/^\s*(\d+)\s*$/)) === null || _a === void 0 ? void 0 : _a[1];
+        id = urlLike.match(/^\s*(\d+)\s*$/)?.[1];
     }
     if (!id) {
-        const tempUrl = (_b = urlLike.match(/(https?:\/\/c\.migu\.cn\/[\S]+)\?/)) === null || _b === void 0 ? void 0 : _b[1];
+        const tempUrl = urlLike.match(/(https?:\/\/c\.migu\.cn\/[\S]+)\?/)?.[1];
         if (tempUrl) {
             const request = (await axios_1.default.get(tempUrl, {
                 headers: {
@@ -276,9 +259,9 @@ async function importMusicSheet(urlLike) {
                     return (status >= 200 && status < 300) || status === 403;
                 },
             })).request;
-            const realpath = (_c = request === null || request === void 0 ? void 0 : request.path) !== null && _c !== void 0 ? _c : request === null || request === void 0 ? void 0 : request.responseURL;
+            const realpath = request?.path ?? request?.responseURL;
             if (realpath) {
-                id = (_d = realpath.match(/id=(\d+)/)) === null || _d === void 0 ? void 0 : _d[1];
+                id = realpath.match(/id=(\d+)/)?.[1];
             }
         }
     }
@@ -320,19 +303,16 @@ async function importMusicSheet(urlLike) {
         withCredentials: true,
     })).data;
     return songs.items
-        .filter((_) => _.vipFlag === 0)
-        .map((_) => {
-        var _a, _b, _c, _d, _e, _f;
-        return ({
-            id: _.songId,
-            artwork: _.cover,
-            title: _.songName,
-            artist: (_b = (_a = _.singers) === null || _a === void 0 ? void 0 : _a.map((_) => _.artistName)) === null || _b === void 0 ? void 0 : _b.join(", "),
-            album: (_d = (_c = _.albums) === null || _c === void 0 ? void 0 : _c[0]) === null || _d === void 0 ? void 0 : _d.albumName,
-            copyrightId: _.copyrightId,
-            singerId: (_f = (_e = _.singers) === null || _e === void 0 ? void 0 : _e[0]) === null || _f === void 0 ? void 0 : _f.artistId,
-        });
-    });
+        // .filter((_) => _.vipFlag === 0)
+        .map((_) => ({
+        id: _.songId,
+        artwork: _.cover,
+        title: _.songName,
+        artist: _.singers?.map((_) => _.artistName)?.join(", "),
+        album: _.albums?.[0]?.albumName,
+        copyrightId: _.copyrightId,
+        singerId: _.singers?.[0]?.artistId,
+    }));
 }
 async function getTopLists() {
     const jianjiao = {
@@ -421,22 +401,22 @@ async function getTopListDetail(topListItem) {
             By,
         },
     });
-    return Object.assign(Object.assign({}, topListItem), { musicList: res.data.data.songs.items
-            .filter((_) => _.fullSong.vipFlag === 0)
-            .map((_) => {
-            var _a, _b, _c, _d, _e, _f;
-            return ({
-                id: _.id,
-                artwork: ((_a = _.mediumPic) === null || _a === void 0 ? void 0 : _a.startsWith("//"))
-                    ? `https:${_.mediumPic}`
-                    : _.mediumPic,
-                title: _.name,
-                artist: (_c = (_b = _.singers) === null || _b === void 0 ? void 0 : _b.map((_) => _.name)) === null || _c === void 0 ? void 0 : _c.join(", "),
-                album: (_d = _.album) === null || _d === void 0 ? void 0 : _d.albumName,
-                copyrightId: _.copyrightId,
-                singerId: (_f = (_e = _.singers) === null || _e === void 0 ? void 0 : _e[0]) === null || _f === void 0 ? void 0 : _f.id,
-            });
-        }) });
+    return {
+        ...topListItem,
+        musicList: res.data.data.songs.items
+            // .filter((_) => _.fullSong.vipFlag === 0)
+            .map((_) => ({
+            id: _.id,
+            artwork: _.mediumPic?.startsWith("//")
+                ? `https:${_.mediumPic}`
+                : _.mediumPic,
+            title: _.name,
+            artist: _.singers?.map((_) => _.name)?.join(", "),
+            album: _.album?.albumName,
+            copyrightId: _.copyrightId,
+            singerId: _.singers?.[0]?.id,
+        })),
+    };
 }
 async function getRecommendSheetTags() {
     const allTags = (await axios_1.default.get("https://m.music.migu.cn/migumusic/h5/playlist/allTag", {
@@ -514,7 +494,6 @@ async function getRecommendSheetsByTag(sheetItem, page) {
 }
 let lastSource = null;
 async function getMediaSource(musicItem, quality) {
-    var _a, _b;
     if (quality === "standard" && musicItem.url) {
         return {
             url: musicItem.url,
@@ -547,8 +526,8 @@ async function getMediaSource(musicItem, quality) {
             url: resource.url,
         };
     }
-    catch (_c) {
-        if ((lastSource === null || lastSource === void 0 ? void 0 : lastSource.songId) !== musicItem.id) {
+    catch {
+        if (lastSource?.songId !== musicItem.id) {
             lastSource = (await axios_1.default.get("https://c.musicapp.migu.cn/MIGUM2.0/v1.0/content/resourceinfo.do", {
                 params: {
                     copyrightId: musicItem.copyrightId,
@@ -560,8 +539,8 @@ async function getMediaSource(musicItem, quality) {
                 },
             })).data.resource[0];
         }
-        const artwork = musicItem.artwork || (((_a = lastSource.albumImgs) === null || _a === void 0 ? void 0 : _a[0]) || {}).img;
-        let rateFormats = (_b = lastSource.newRateFormats) !== null && _b !== void 0 ? _b : [];
+        const artwork = musicItem.artwork || (lastSource.albumImgs?.[0] || {}).img;
+        let rateFormats = lastSource.newRateFormats ?? [];
         let url;
         if (quality === "super") {
             url = rateFormats
@@ -591,7 +570,8 @@ async function getMediaSource(musicItem, quality) {
 }
 module.exports = {
     platform: "咪咕",
-    version: "0.2.0",
+    version: "1.1.3",
+    order: 15,
     appVersion: ">0.1.0-alpha.0",
     hints: {
         importMusicSheet: [
@@ -602,8 +582,7 @@ module.exports = {
     },
     primaryKey: ["id", "copyrightId"],
     cacheControl: "no-cache",
-    srcUrl: "https://gitee.com/maotoumao/MusicFreePlugins/raw/v0.1/dist/migu/index.js",
-    supportedSearchType: ["music", "album", "sheet", "artist", "lyric"],
+    srcUrl: "https://agit.ai/vale_gtt/MSC_API/raw/branch/master/dist/migu/my_migu.js",
     getMediaSource,
     async search(query, page, type) {
         if (type === "music") {
@@ -617,9 +596,6 @@ module.exports = {
         }
         if (type === "sheet") {
             return await searchMusicSheet(query, page);
-        }
-        if (type === "lyric") {
-            return await searchLyric(query, page);
         }
     },
     async getAlbumInfo(albumItem) {
@@ -653,7 +629,7 @@ module.exports = {
         return {
             albumItem: { description: albumDesc.albumIntro },
             musicList: musicList.result.results
-                .filter(musicCanPlayFilter)
+                // .filter(musicCanPlayFilter)
                 .map((_) => ({
                 id: _.songId,
                 artwork: _.picM,
