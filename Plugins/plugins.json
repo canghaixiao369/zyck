@@ -61,6 +61,12 @@
             "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/Plugins/dist/yinyuetai/index.js",
             "version": "0.1.0"
         },
+
+        {
+            "name": "360dj",
+            "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/Plugins/dist/360dj/index.js",
+            "version": "0.0.2"
+        },
         
         {
             "name": "youtube",
