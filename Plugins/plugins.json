@@ -55,6 +55,25 @@
             "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/Plugins/dist/qmkg/index.js",
             "version": "0.1.0"
         },
+        
+        {
+            "name": "音乐台",
+            "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/Plugins/dist/yinyuetai/index.js",
+            "version": "0.1.0"
+        },
+        
+        {
+            "name": "youtube",
+            "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/Plugins/dist/youtube/index.js",
+            "version": "0.1.0"
+        },
+        
+        {
+            "name": "audiomack",
+            "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/Plugins/dist/audiomack/index.js",
+            "version": "0.1.0"
+        },
+        
         {
             "name": "QQ音乐",
             "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/Plugins/dist/qq/index.js",
