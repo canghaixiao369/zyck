@@ -73,6 +73,18 @@
             "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/Plugins/dist/youtube/index.js",
             "version": "0.1.0"
         },
+
+        {
+            "name": "WebDAV",
+            "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/Plugins/dist/webdav/index.js",
+            "version": "0.0.0"
+        },
+        
+        {
+            "name": "Navidrome",
+            "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/Plugins/dist/navidrome/index.js",
+            "version": "0.0.0"
+        },
         
         {
             "name": "audiomack",
