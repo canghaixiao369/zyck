@@ -178,8 +178,9 @@ async function getMusicSheetInfo(sheet, page) {
 module.exports = {
     platform: "猫耳FM",
     version: "0.1.3",
+    author: "猫头猫",
     appVersion: ">0.1.0-alpha.0",
-    srcUrl: "https://gitee.com/maotoumao/MusicFreePlugins/raw/v0.1/dist/maoerfm/index.js",
+    srcUrl: "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/Plugins/dist/maoerfm/index.js",
     cacheControl: "no-cache",
     supportedSearchType: ["music", "album",],
     async search(query, page, type) {

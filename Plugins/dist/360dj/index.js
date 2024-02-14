@@ -363,7 +363,8 @@ module.exports = {
     },
     primaryKey: ["id"],
     cacheControl: "no-store",
-    srcUrl: "http://tv.zanlagua.com/360dj.js",
+    author: "猫头猫",
+    srcUrl: "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/Plugins/dist/360dj/index.js",
   /** 供给软件在合适的时机调用的函数 */
 
   getTopLists,

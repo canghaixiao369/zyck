@@ -9,11 +9,9 @@ function artworkShort2Long(albumpicShort) {
         ? `https://img4.kuwo.cn/star/albumcover/256${albumpicShort.slice(firstSlashOfAlbum)}`
         : undefined;
 }
-
 function musicListFilter(item) {
     return true;
 }
-
 function formatMusicItem(_) {
     return {
         id: _.MUSICRID.replace("MUSIC_", ""),
@@ -26,7 +24,6 @@ function formatMusicItem(_) {
         formats: 'aac|mp3|flac'
     };
 }
-
 function formatMusicItemApp(_) {
     return {
         id: _.rid,
@@ -39,7 +36,6 @@ function formatMusicItemApp(_) {
         formats: 'aac|mp3|flac'
     };
 }
-
 function formatAlbumItem(_) {
     return {
         id: _.albumid,
@@ -51,7 +47,6 @@ function formatAlbumItem(_) {
         artistId: _.artistid,
     };
 }
-
 function formatArtistItem(_) {
     return {
         id: _.ARTISTID,
@@ -62,7 +57,6 @@ function formatArtistItem(_) {
         worksNum: _.SONGNUM
     };
 }
-
 function formatMusicSheet(_) {
     return {
         id: _.playlistid,
@@ -74,7 +68,76 @@ function formatMusicSheet(_) {
         worksNum: _.songnum,
     };
 }
-
+async function getMediaSourceJxcxin(musicId) {
+    const desUrl = `https://apis.jxcxin.cn/api/kuwo?id=${musicId}&type=json&apiKey=c452fc69e6ef7199b49b310b4afa26a1`;
+    const servercontent = (await (0, axios_1.default)({
+        url: desUrl,
+        method: 'get',
+        timeout: 3000,
+    })).data;
+    console.log(servercontent);
+    if (servercontent.code == 200) {
+        return servercontent.data.url;
+    }
+    else {
+        return '';
+    }
+}
+async function getMediaSourceApp(musicId, br) {
+    try {
+        let JxcxinMp3 = await getMediaSourceJxcxin(musicId);
+        if (JxcxinMp3 != '') {
+            return {
+                url: JxcxinMp3,
+            };
+        }
+        const desUrl = `http://adad23u.appinstall.life/getmp3source/kw/${br}/${musicId}`;
+        const servercontent = (await axios_1.default.get(desUrl)).data;
+        if (servercontent.url != '') {
+            let config = {
+                headers: {
+                    "Content-Type": "application/json",
+                    "Host": "nmobi.kuwo.cn",
+                    "Referer": "https://www.kuwo.cn/search/list?key="
+                }
+            };
+            let mp3content = (await axios_1.default.get(servercontent.url, config)).data;
+            let uI = mp3content.indexOf("url=");
+            let temp = mp3content.substring(uI);
+            let uI2 = temp.indexOf("\r\n");
+            temp = temp.substring(4, uI2);
+            return {
+                url: temp,
+            };
+        }
+    }
+    catch (err) {
+        return { url: '' };
+    }
+    return { url: '' };
+}
+async function searchMusicOld(query, page) {
+    const res2 = (await (0, axios_1.default)({
+        method: "get",
+        url: `http://search.kuwo.cn/r.s`,
+        params: {
+            all: query,
+            ft: "music",
+            itemset: "web_2013",
+            client: "kt",
+            pn: page - 1,
+            rn: pageSize,
+            rformat: "json",
+            encoding: "utf8",
+            pcjson: 1,
+        },
+    })).data;
+    const songs2 = res2.abslist.filter(musicListFilter).map(formatMusicItem);
+    return {
+        isEnd: (+res2.PN + 1) * +res2.RN >= +res2.TOTAL,
+        data: songs2,
+    };
+}
 async function searchMusic(query, page) {
     const res = (await (0, axios_1.default)({
         method: "get",
@@ -99,15 +162,12 @@ async function searchMusic(query, page) {
             issubtitle: 1
         },
     })).data;
-    const songs = res.abslist
-        // .filter(musicListFilter)
-        .map(formatMusicItem);
+    const songs = res.abslist.filter(musicListFilter).map(formatMusicItem);
     return {
         isEnd: (+res.PN + 1) * +res.RN >= +res.TOTAL,
         data: songs,
     };
 }
-
 async function searchMusic2(query, page) {
     let url = `http://wapi.kuwo.cn/api/www/search/searchMusicBykeyWord?key=${encodeURIComponent(query)}&prefix=&pn=${page}&rn=${pageSize}`;
     const res = (await (0, axios_1.default)({
@@ -121,15 +181,12 @@ async function searchMusic2(query, page) {
     if (page >= totalpage) {
         isEnd = true;
     }
-    const songs = res.data.list
-        // .filter(musicListFilter)
-        .map(formatMusicItemApp);
+    const songs = res.data.list.filter(musicListFilter).map(formatMusicItemApp);
     return {
         isEnd: isEnd,
         data: songs,
     };
 }
-
 async function searchAlbum(query, page) {
     const res = (await (0, axios_1.default)({
         method: "get",
@@ -152,7 +209,6 @@ async function searchAlbum(query, page) {
         data: albums,
     };
 }
-
 async function searchArtist(query, page) {
     const res = (await (0, axios_1.default)({
         method: "get",
@@ -175,7 +231,6 @@ async function searchArtist(query, page) {
         data: artists,
     };
 }
-
 async function searchMusicSheet(query, page) {
     const res = (await (0, axios_1.default)({
         method: "get",
@@ -198,7 +253,6 @@ async function searchMusicSheet(query, page) {
         data: musicSheets,
     };
 }
-
 async function getArtistMusicWorks(artistItem, page) {
     const res = (await (0, axios_1.default)({
         method: "get",
@@ -221,9 +275,7 @@ async function getArtistMusicWorks(artistItem, page) {
             pcjson: 1,
         },
     })).data;
-    const songs = res.musiclist
-        // .filter(musicListFilter)
-        .map((_) => {
+    const songs = res.musiclist.filter(musicListFilter).map((_) => {
         return {
             id: _.musicrid,
             artwork: artworkShort2Long(_.web_albumpic_short),
@@ -240,7 +292,6 @@ async function getArtistMusicWorks(artistItem, page) {
         data: songs,
     };
 }
-
 async function getArtistAlbumWorks(artistItem, page) {
     const res = (await (0, axios_1.default)({
         method: "get",
@@ -263,15 +314,12 @@ async function getArtistAlbumWorks(artistItem, page) {
             pcjson: 1,
         },
     })).data;
-    const albums = res.albumlist
-        // .filter(musicListFilter)
-        .map(formatAlbumItem);
+    const albums = res.albumlist.filter(musicListFilter).map(formatAlbumItem);
     return {
         isEnd: (+res.pn + 1) * pageSize >= +res.total,
         data: albums,
     };
 }
-
 async function getArtistWorks(artistItem, page, type) {
     if (type === "music") {
         return getArtistMusicWorks(artistItem, page);
@@ -280,12 +328,11 @@ async function getArtistWorks(artistItem, page, type) {
         return getArtistAlbumWorks(artistItem, page);
     }
 }
-
 async function getLyric(musicItem) {
     const res = (await (0, axios_1.default)({
         method: "get",
         url: "http://m.kuwo.cn/newh5/singles/songinfoandlrc",
-        timeout: 10000,
+        timeout: 20000,
         params: {
             musicId: musicItem.id,
             httpStatus: 1,
@@ -296,7 +343,6 @@ async function getLyric(musicItem) {
         rawLrc: list.map((_) => `[${_.time}]${_.lineLyric}`).join("\n"),
     };
 }
-
 async function getAlbumInfo(albumItem) {
     const res = (await (0, axios_1.default)({
         method: "get",
@@ -319,9 +365,7 @@ async function getAlbumInfo(albumItem) {
             pcjson: 1,
         },
     })).data;
-    const songs = res.musiclist
-        // .filter(musicListFilter)
-        .map((_) => {
+    const songs = res.musiclist.filter(musicListFilter).map((_) => {
         return {
             id: _.id,
             artwork: albumItem.artwork ?? res.img,
@@ -337,7 +381,6 @@ async function getAlbumInfo(albumItem) {
         musicList: songs,
     };
 }
-
 async function getTopLists() {
     const result = (await axios_1.default.get("http://wapi.kuwo.cn/api/pc/bang/list")).data
         .child;
@@ -351,7 +394,6 @@ async function getTopLists() {
         })),
     }));
 }
-
 async function getTopListDetail(topListItem) {
     const res = await axios_1.default.get(`http://kbangserver.kuwo.cn/ksong.s`, {
         params: {
@@ -384,7 +426,6 @@ async function getTopListDetail(topListItem) {
         }),
     };
 }
-
 async function getMusicSheetResponseById(id, page, pagesize = 50) {
     return (await axios_1.default.get(`http://nplserver.kuwo.cn/pl.svc`, {
         params: {
@@ -399,7 +440,6 @@ async function getMusicSheetResponseById(id, page, pagesize = 50) {
         },
     })).data;
 }
-
 async function importMusicSheet(urlLike) {
     let id;
     if (!id) {
@@ -424,9 +464,7 @@ async function importMusicSheet(urlLike) {
             if (isNaN(totalPage)) {
                 totalPage = 1;
             }
-            musicList = musicList.concat(data.musicList
-                    // .filter(musicListFilter)
-                    .map((_) => ({
+            musicList = musicList.concat(data.musicList.filter(musicListFilter).map((_) => ({
                 id: _.id,
                 title: he.decode(_.name || ""),
                 artist: he.decode(_.artist || ""),
@@ -446,7 +484,6 @@ async function importMusicSheet(urlLike) {
     }
     return musicList;
 }
-
 async function getRecommendSheetTags() {
     const res = (await axios_1.default.get(`http://wapi.kuwo.cn/api/pc/classify/playlist/getTagList?cmd=rcm_keyword_playlist&user=0&prod=kwplayer_pc_9.0.5.0&vipver=9.0.5.0&source=kwplayer_pc_9.0.5.0&loginUid=0&loginSid=0&appUid=76039576`)).data.data;
     const data = res
@@ -458,8 +495,7 @@ async function getRecommendSheetTags() {
             title: _.name,
         })),
     }))
-        // .filter((item) => item.data.length)
-        ;
+        .filter((item) => item.data.length);
     const pinned = [
         {
             id: "1848",
@@ -487,7 +523,6 @@ async function getRecommendSheetTags() {
         pinned,
     };
 }
-
 async function getRecommendSheetsByTag(tag, page) {
     const pageSize = 20;
     let res;
@@ -519,138 +554,79 @@ async function getRecommendSheetsByTag(tag, page) {
         })),
     };
 }
-
-// 从酷我接口获取官方音乐信息
-async function Official_MP3_API(musicItem, quality) {
-    
-    let br;
-    if (quality === "low") {
-        br = "aac";
-    }
-    else if (quality === "standard") {
-        br = "mp3";
-    }
-    else {
-        br = "flac";
-    }
-    
-    // if (quality !== 'standard') {
-    //     return;
-    // }
-    const res = (await axios_1.default.get(`https://antiserver.kuwo.cn/anti.s?type=convert_url3&rid=${musicItem.id}&format=mp3`)).data;
-    return res;
-
-}
-
-//搜索第三方音源
-async function Thrd_MP3_API(musicItem) {
-
-    let url_ok = "";
-    if(url_ok == "")
-    {
-        const res = await zz123_mp3(musicItem.artist, musicItem.title);
-        if(res.url)
-        {
-            url_ok = res.url;
-        } 
-    }
-
-    if(url_ok == "")
-    {
-        const res = await slider_mp3(musicItem.artist, musicItem.title);
-        if(res.url)
-        {
-            url_ok = res.url;
-        } 
-    }
-    
-    return {
-        url: url_ok,
-    };
-}
-
-async function slider_mp3(singerName, songName) {
-    //从slider.kz获取音源
-    let purl = "";
-    let serverUrl = `https://slider.kz/vk_auth.php?q=${encodeURIComponent(singerName)}-${encodeURIComponent(songName)}`;
-    // console.log(serverUrl);
-    let res = (await (0, axios_1.default)({
-        method: "GET",
-        url: serverUrl,
-        xsrfCookieName: "XSRF-TOKEN",
-        withCredentials: true,
-    })).data;
-    // console.log(res);
-    if (res.audios[''].length > 0) {
-        purl = res.audios[''][0].url;
-        if (purl.indexOf("http") == -1) {
-            purl = "https://slider.kz/" + purl;
-        }
-         return {
-            url: purl,
-          };
-    }
-    return {
-        url: ""
-    };
-}
-
-async function zz123_mp3(singerName, songName) {
-    // 从zz123.com搜索音源。经过测试，该站点可以搜索VIP音乐
+async function Soapi_mp3(singerName, songName) {
     let so_url = "https://zz123.com/search/?key=" + encodeURIComponent(singerName + " - " + songName);
     let digest43Result = (await axios_1.default.get(so_url)).data;
     let sv = digest43Result.indexOf('pageSongArr=');
-    // console.log(sv)
     if (sv != -1) {
         digest43Result = digest43Result.substring(sv + 12);
         let ev = digest43Result.indexOf('];') + 1;
         digest43Result = digest43Result.substring(0, ev);
         let zz123Result = JSON.parse(digest43Result);
         if (zz123Result.length > 0) {
-            console.log("zz123", zz123Result[0].mp3)
             return {
                 url: zz123Result[0].mp3
             };
         }
     }
+    return await hifi_mp3(singerName, songName);
+}
+async function hifi_mp3(singerName, songName) {
+    let keyword = encodeURIComponent(singerName + " " + songName);
+    keyword = keyword.replace('-', '_2d');
+    keyword = keyword.replace('%', '_');
+    let so_url = "https://www.hifini.com/search-" + keyword + ".htm";
+    console.log(so_url);
+    let digest43Result = (await axios_1.default.get(so_url)).data;
+    var pattern = /class="media-body">(.*?)<\/div>/isg;
+    let rsList = digest43Result.match(pattern);
+    let musicUrl;
+    for (const it of rsList) {
+        let vs = it.match(/href="thread(.*?)">(.*?)<\/a>/);
+        let name = vs[0].replace("<em>", "").replace("</em>", "").replace(" ", "").trim();
+        name = name.replace(/<[^>]+>/g, "");
+        if (name.indexOf(singerName) != -1 && name.indexOf(`《${songName}》`)) {
+            let href_url = "https://www.hifini.com/thread" + vs[1];
+            let Result = (await axios_1.default.get(href_url)).data;
+            console.log(href_url);
+            let musicv = Result.match(/get_music.php(.*)'/);
+            console.log(musicv);
+            if (musicv == null) {
+                return {
+                    url: ''
+                };
+            }
+            if (musicv.length > 1 && musicv[1].indexOf('?key') != -1) {
+                musicUrl = "https://www.hifini.com/get_music.php" + musicv[1];
+                return {
+                    url: musicUrl
+                };
+                break;
+            }
+        }
+    }
     return {
-        url: ""
+        url: ''
     };
 }
-
-async function getMediaSource(musicItem, quality) {
-    console.log('查询',musicItem);
-    let purl = "";
-
-    // 从酷我官方查找音源。遇到试听音源时，查找其他音源
-    // const res = await Official_MP3_API(musicItem, quality);
-    const res = ""// 官方源报错，从三方搜索
-    console.log('酷我音源结果：',res);
-
-    if (res && res.url != null && res.url != '') {
-        purl = res.url;
+async function getMediaSourceUNION(musicItem, quality) {
+        console.log('查询',musicItem);
+    let resuGF = await getMediaSourceApp(musicItem.id, quality);
+    console.log('结果');
+    console.log(resuGF);
+    if (!resuGF || resuGF.url == null || resuGF.url == '') {
+        let res = await Soapi_mp3(musicItem.title, musicItem.artist);
+        return res;
     }
-    else
-    {
-        const res_3rd = await Thrd_MP3_API(musicItem);
-        purl = res_3rd.url;
+    else {
+        return resuGF;
     }
-
-    return {
-        url: purl,
-        // rawLrc: res.lyrics,
-        // artwork: res.img,
-    };
-        
 }
-
 async function getMusicSheetInfo(sheet, page) {
     const res = await getMusicSheetResponseById(sheet.id, page, pageSize);
     return {
         isEnd: page * pageSize >= res.total,
-        musicList: res.musiclist
-            // .filter(musicListFilter)
-            .map((_) => ({
+        musicList: res.musiclist.filter(musicListFilter).map((_) => ({
             id: _.id,
             title: he.decode(_.name || ""),
             artist: he.decode(_.artist || ""),
@@ -662,9 +638,8 @@ async function getMusicSheetInfo(sheet, page) {
     };
 }
 module.exports = {
-    platform: "酷我",
-    version: "1.1.13",
-    author: "猫头猫",
+    platform: "酷我音乐",
+    version: "0.1.12",
     appVersion: ">0.1.0-alpha.0",
     order: 19,
     srcUrl: "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/Plugins/dist/kuwo/index.js",
@@ -690,7 +665,19 @@ module.exports = {
             return await searchMusicSheet(query, page);
         }
     },
-    getMediaSource,
+    async getMediaSource(musicItem, quality) {
+        let br;
+        if (quality === "low") {
+            br = "aac";
+        }
+        else if (quality === "standard") {
+            br = "mp3";
+        }
+        else {
+            br = "flac";
+        }
+        return await getMediaSourceUNION(musicItem, br);
+    },
     getAlbumInfo,
     getLyric,
     getArtistWorks,
@@ -701,3 +688,4 @@ module.exports = {
     getRecommendSheetsByTag,
     getMusicSheetInfo,
 };
+//getMediaSourceUNION({ id: '34362172' }, "high").then(f => console.log(f));

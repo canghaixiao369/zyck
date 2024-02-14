@@ -56,7 +56,9 @@ async function searchMusic(query) {
 }
 module.exports = {
     platform: "WebDAV",
+    version: "0.0.0",
     author: "猫头猫",
+    appVersion: ">0.1.0-alpha.0",
     description: "使用此插件前先配置用户变量",
     userVariables: [
         {

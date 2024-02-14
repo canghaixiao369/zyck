@@ -422,9 +422,10 @@ module.exports = {
     platform: "bilibili",
     appVersion: ">=0.0",
     version: "0.1.7",
+    author: "猫头猫",
     defaultSearchType: "album",
     cacheControl: "no-cache",
-    srcUrl: "https://gitee.com/maotoumao/MusicFreePlugins/raw/v0.1/dist/bilibili/index.js",
+    srcUrl: "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/Plugins/dist/bilibili/index.js",
     primaryKey: ["id", "aid", "bvid", "cid"],
     hints: {
         importMusicSheet: [

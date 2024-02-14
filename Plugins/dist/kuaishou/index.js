@@ -140,7 +140,8 @@ async function searchMusic(query, page) {
 module.exports = {
     platform: "快手",
     version: "0.0.0",
-    srcUrl: "https://gitee.com/maotoumao/MusicFreePlugins/raw/v0.1/dist/kuaishou/index.js",
+    author: "猫头猫",
+    srcUrl: "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/Plugins/dist/kuaishou/index.js",
     cacheControl: "no-cache",
     supportedSearchType: ["music"],
     async search(query, page, type) {

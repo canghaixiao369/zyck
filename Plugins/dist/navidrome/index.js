@@ -86,7 +86,7 @@ module.exports = {
     version: "0.0.0",
     author: '猫头猫',
     appVersion: ">0.1.0-alpha.0",
-    srcUrl: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/dukunjueji/MusicFreePlugins/master/dist/navidrome/index.js",
+    srcUrl: "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/Plugins/dist/navidrome/index.js",
     cacheControl: "no-cache",
     userVariables: [
         {

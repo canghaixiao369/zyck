@@ -187,8 +187,10 @@ async function getMediaSource(musicItem, quality) {
 module.exports = {
     platform: "Youtube",
     version: "0.0.0",
+    author: '猫头猫',
+    appVersion: ">0.1.0-alpha.0",
     supportedSearchType: ["music"],
-    srcUrl: "https://gitee.com/maotoumao/MusicFreePlugins/raw/v0.1/dist/youtube/index.js",
+    srcUrl: "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/Plugins/dist/youtube/index.js",
     cacheControl: "no-cache",
     search,
     getMediaSource,
