@@ -5597,6 +5597,7 @@ sheep张艺兴,https://vdse.bdstatic.com/971347deaddd6fdb5ada6e87e4722ece.mp4?au
 春晚2022,http://txmov2.a.kwimgs.com/upic/2022/02/01/11/BMjAyMjAyMDExMTEwMjNfNDAzMDAxOTlfNjYzNzA4MTk4NzNfMF8z_b_B898cc7ddd0025bf54ddb18ec1f723c84.mp4
 春晚2023,https://txmov2.a.kwimgs.com/bs3/video-hls/5251197255879398624_hlshd15.m3u8
 春晚2024,https://hls.cntv.kcdnvip.com/asp/hls/main/0303000a/3/default/cc466477fdf5424bbef560d4f21c63f3/main.m3u8?maxbr=2048
+春晚2024,https://newcntv.qcloudcdn.com/asp/hls/main/0303000a/3/default/cc466477fdf5424bbef560d4f21c63f3/main.m3u8
 
 🌷丨中国之声,#genre#
 CNR-2经济之声,http://ngcdn002.cnr.cn/live/jjzs/index.m3u8
