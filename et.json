@@ -16,6 +16,15 @@
             "api": "./JS/ubestkid_open.js", 
             "jar": "./jar/f.jar"
         },
+
+        {
+            "key": "tuxiaobei_open",
+            "name": "🐰兔小贝[cat]",
+            "type": 3,
+            "api": "./JS/tuxiaobei_open.js",
+            "jar": "./jar/f.jar"
+        },
+        
         {
             "key": "csp_XYQHiker_兔小贝",
             "name": "🐰兔小贝",
