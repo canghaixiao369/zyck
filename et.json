@@ -11,7 +11,7 @@
     "sites": [
         {
             "key": "ubestkid_open",
-            "name": "贝乐虎[cat]",
+            "name": "🐯贝乐虎🐯",
             "type": 3,
             "api": "./JS/ubestkid_open.js", 
             "jar": "./jar/f.jar"
