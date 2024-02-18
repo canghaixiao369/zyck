@@ -10,15 +10,11 @@
     ],
     "sites": [
         {
-            "key": "ubestkid",
-            "name": "乐虎【📺】",
+            "key": "ubestkid_open",
+            "name": "贝乐虎[cat]",
             "type": 3,
-            "api": "csp_blh",
-            "searchable": 0,
-            "quickSearch": 0,
-            "filterable": 0,
-            "ext": "./JS/ubestkid_open.js", 
-            "jar": "./jar/spider.jar"
+            "api": "./JS/ubestkid_open.js", 
+            "jar": "./jar/f.jar"
         },
         {
             "key": "csp_XYQHiker_兔小贝",
