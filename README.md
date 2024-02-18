@@ -13,25 +13,41 @@
 2 APP推荐:
 
 （1）FongMi版本  项目地址：https://github.com/FongMi/TV 支持直播多线路、自动换源、直播倍速，手机投屏；
+
 （2）q215613905版本  项目地址：https://github.com/q215613905/TVBoxOS 支持直播回放；
+
 （3）takagen99版本  项目地址：https://github.com/takagen99/Box 支持直播回放，界面美观；
+
 （4）猫影视   项目地址：https://github.com/catvod/CatVodOpen 界面简洁，支持多平台。
+
 
 TVBox各路大佬配置（排名不分先后）：
 
+
 （1）俊于：http://home.jundie.top:81/top98.json
+
+
 （2）饭太硬：http://饭太硬.top/tv
+
 （3）霜辉月明py：https://999740.xyz/raw.githubusercontent.com/lm317379829/PyramidStore/pyramid/py.json
+
 （4）小米小爆脾气：http://xhww.fun:63/小米/DEMO.json
+
 （5）菜妮丝：https://tvbox.cainisi.cf
+
 （6）南风：https://agit.ai/Yoursmile7/TVBox/raw/branch/master/XC.json
+
 （7）神器：https://神器每日推送.tk/pz.json
+
 （8）巧技：http://pandown.pro/tvbox/tvbox.json
+
 （9）Ray：https://100km.top/0
+
 
 随机轮换壁纸：
 
-（1）https://jianbian.chuqiuyu.workers.dev 自制极简渐变壁纸
+
+（1）https://jianbian.chuqiuyu.workers.dev 自制极简渐变壁纸/n
 （2）http://www.kf666888.cn/api/tvbox/img
 （3）https://picsum.photos/1280/720/?blur=10
 （4）http://刚刚.live/图
