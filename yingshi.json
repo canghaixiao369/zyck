@@ -65,6 +65,15 @@
             "quickSearch": 1,
             "playUrl": "parse:LR"
         },
+
+        {
+            "key": "nangua3",
+            "name": "🪶南瓜影视[cat]",
+            "type": 3,
+            "api": "./JS/ng_open.js", 
+            "jar": "./jar/f.jar"
+        },
+        
         {
             "key": "自营站",
             "name": "🥨夏木自营",
