@@ -58,6 +58,16 @@
             "ext": "./json/吾爱幼儿舞蹈.json",
             "jar": "./jar/spider.jar"
         },
+
+         {
+            "key": "boosj_open",
+            "name": "🍭童趣[cat]",
+            "type": 3,
+            "api": "./cat/boosj_open.js",
+            "jar": "./jar/f.jar"
+        },
+
+        
         {
             "key": "csp_XYQHiker_童趣",
             "name": "🍭童趣",
