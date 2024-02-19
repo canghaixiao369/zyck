@@ -84,6 +84,13 @@
         "分类": "袁阔成$ykc#单田芳$stf#田连元$tly#刘兰芳$llf#连丽如$llr#张少佐$zsz#田战义$tzy"
       }
     },
+
+ {
+    "key": "yinyue",
+    "name": "酷奇T4|MV",
+    "type": 4,
+    "api": "https://catbox.n13.club/yyy.php"
+     },
         
         {
             "key": "csp_XYQHiker_有声小说吧",
