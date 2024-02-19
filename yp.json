@@ -12,6 +12,13 @@
     "spider": "./jar/spider.jar",
     "sites": [
 
+       {
+    "key": "yinyue",
+    "name": "线路|音乐",
+    "type": 4,
+    "api": "https://catbox.n13.club/yyy.php"
+     },
+
          {
       "key": "相声",
       "name": "畅影｜相声",
