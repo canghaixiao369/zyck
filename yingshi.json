@@ -1706,6 +1706,15 @@
             "ext": "./JS/lib/光棍影院.js",
             "jar": "./jar/fan.txt"
         },
+
+        {
+            "key": "jojo",
+            "name": "🌏舟舟[cat]",
+            "type": 3,
+            "api": "./JS/jojo_open.js", 
+            "jar": "./jar/f.jar"
+        },
+        
         {
             "key": "csp_MYYS",
             "name": "🎬┃影视┃蚂蚁",
