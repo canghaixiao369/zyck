@@ -30,6 +30,15 @@
             "ext": "./py/yangshipianku.py",
             "jar": "./jar/fan.jar"
         },
+
+        {
+            "key": "cntv",
+            "name": "央视[cat]",
+            "type": 3,
+            "api": "./JS/cntv_open.js",
+            "jar": "./jar/f.jar"
+        },
+        
         {
             "key": "py_cctv",
             "name": "📺┃央视┃法治",
