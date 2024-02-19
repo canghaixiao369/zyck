@@ -12,6 +12,13 @@
     "spider": "./jar/spider.jar",
     "sites": [
 
+	    {
+    "key": "yinyue",
+    "name": "酷奇T4|MV",
+    "type": 4,
+    "api": "https://catbox.n13.club/yyy.php"
+     },
+
 	     {
             "key": "歌手",
             "name": "🅱┃哔哩┃歌手",
