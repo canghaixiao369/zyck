@@ -12,21 +12,7 @@
     "spider": "./jar/spider.jar",
     "sites": [
 
-            {
-            "key": "drpy2_js_酷奇MV",
-            "name": "🎞️┃MV┃酷奇测试",
-            "type": 3,
-            "api": "./JS/js/drpy.js",
-            "ext": "./JS/lib/酷奇MV.js"
-           
-        },
-	    
-	    {
-    "key": "yinyue",
-    "name": "酷奇T4|MV",
-    "type": 4,
-    "api": "https://catbox.n13.club/yyy.php"
-     },
+	   
 
 	     {
             "key": "歌手",
