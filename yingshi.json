@@ -1442,6 +1442,15 @@
             "ext": "./json/好戏.json",
             "jar": "./jar/custom_spider1.jar"
         },
+
+        {
+            "key": "subaibai",
+            "name": "🪶素白白[cat]",
+            "type": 3,
+            "api": "./JS/subaibai_open.js", 
+            "jar": "./jar/f.jar"
+        },
+        
         {
             "key": "畅梦",
             "name": "💤┃影视┃畅梦",
