@@ -67,7 +67,7 @@
         },
 
         {
-            "key": "nangua3",
+            "key": "nangua",
             "name": "🪶南瓜影视[cat]",
             "type": 3,
             "api": "./JS/ng_open.js", 
