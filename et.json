@@ -63,7 +63,7 @@
             "key": "boosj_open",
             "name": "🍭童趣[cat]",
             "type": 3,
-            "api": "./cat/boosj_open.js",
+            "api": "./JS/boosj_open.js",
             "jar": "./jar/f.jar"
         },
 
