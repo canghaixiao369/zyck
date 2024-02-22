@@ -14,9 +14,9 @@
 
 { "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/yp.json", "name": "🎢沧海笑整理-音乐🎢" },
 
-{ "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/qita/watson/watson.json", "name": "🎢沧海笑整理-道长🎢" },
+{ "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/qita/watson/watson.json", "name": "👷沧海笑整理-道长👷" },
 
-{ "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/qita/pg/pg.json", "name": "🎢沧海笑整理-PG🎢" },
+{ "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/qita/pg/pg.json", "name": "🅿沧海笑整理-PG🅿" },
 
 { "url": "http://我不是.肥猫.live/接口禁止贩卖", "name": "🐼沧海笑整理-肥猫在线🐼" },
 
