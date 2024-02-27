@@ -1,0 +1,513 @@
+[
+  {
+    "concurrentRate": "0",
+    "contentType": "audio/wav",
+    "enabledCookieJar": false,
+    "id": -100,
+    "lastUpdateTime": 1708566078887,
+    "name": "1.百度",
+    "url": "http://tts.baidu.com/text2audio,{\n    \"method\": \"POST\",\n    \"body\": \"tex={{java.encodeURI(java.encodeURI(speakText))}}&spd={{(speakSpeed + 5) / 10 + 4}}&per=3&cuid=baidu_speech_demo&idx=1&cod=2&lan=zh&ctp=1&pdt=160&vol=5&aue=6&pit=5&_res_tag_=audio\"\n}"
+  },
+  {
+    "concurrentRate": "0",
+    "contentType": "audio/mpeg",
+    "enabledCookieJar": false,
+    "id": -29,
+    "lastUpdateTime": 1708566078890,
+    "loginCheckJs": "var response = result;\nif (response.headers().get(\"Content-Type\") != \"audio/mpeg\") {\n    var body = JSON.parse(response.body().string())\n    if (body.status == 40000001) {\n        source.login()\n        java.getHeaderMap().putAll(source.getHeaderMap(true))\n        response = java.getResponse()\n    } else {\n        throw body.message\n    }\n}\nresponse",
+    "loginUi": "[\n  {\n    \"name\": \"AppKey\",\n    \"type\": \"text\"\n  },\n  {\n    \"name\": \"AccessKeyId\",\n    \"type\": \"text\"\n  },\n  {\n    \"name\": \"AccessKeySecret\",\n    \"type\": \"text\"\n  }\n]",
+    "loginUrl": "var loginInfo = source.getLoginInfoMap();\nvar accessKeyId = loginInfo.get('AccessKeyId');\nvar accessKeySecret = loginInfo.get('AccessKeySecret');\nvar timestamp = java.timeFormatUTC(new Date().getTime(), \"yyyy-MM-dd'T'HH:mm:ss'Z'\", 0);\nvar aly = new JavaImporter(Packages.javax.crypto.Mac, Packages.javax.crypto.spec.SecretKeySpec, Packages.javax.xml.bind.DatatypeConverter, Packages.java.net.URLEncoder, Packages.java.lang.String, Packages.android.util.Base64);\nwith (aly) {\n    function percentEncode(value) {\n        return URLEncoder.encode(value, \"UTF-8\").replace(\"+\", \"%20\")\n            .replace(\"*\", \"%2A\").replace(\"%7E\", \"~\")\n    }\n\n    function sign(stringToSign, accessKeySecret) {\n        var mac = Mac.getInstance('HmacSHA1');\n        mac.init(new SecretKeySpec(String(accessKeySecret + '&').getBytes(\"UTF-8\"), \"HmacSHA1\"));\n        var signData = mac.doFinal(String(stringToSign).getBytes(\"UTF-8\"));\n        var signBase64 = Base64.encodeToString(signData, Base64.NO_WRAP);\n        var signUrlEncode = percentEncode(signBase64);\n        return signUrlEncode;\n    }\n}\nvar query = 'AccessKeyId=' + accessKeyId + '&Action=CreateToken&Format=JSON&RegionId=cn-shanghai&SignatureMethod=HMAC-SHA1&SignatureNonce=' + java.randomUUID() + '&SignatureVersion=1.0&Timestamp=' + percentEncode(timestamp) + '&Version=2019-02-28';\nvar signStr = sign('GET&' + percentEncode('/') + '&' + percentEncode(query), accessKeySecret);\nvar queryStringWithSign = \"Signature=\" + signStr + \"&\" + query;\nvar body = java.ajax('http://nls-meta.cn-shanghai.aliyuncs.com/?' + queryStringWithSign)\nvar res = JSON.parse(body)\nif (res.Message) {\n    throw new Error(res.Message)\n}\nvar header = { \"X-NLS-Token\": res.Token.Id };\nsource.putLoginHeader(JSON.stringify(header))",
+    "name": "2.阿里云语音",
+    "url": "https://nls-gateway.cn-shanghai.aliyuncs.com/stream/v1/tts,{\"method\": \"POST\",\"body\": {\"appkey\":\"{{source.getLoginInfoMap().get('AppKey')}}\",\"text\":\"{{speakText}}\",\"format\":\"mp3\",\"volume\":100,\"speech_rate\":{{String((speakSpeed) * 20 - 400)}} }}"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146476375,
+    "lastUpdateTime": 1708912429866,
+    "name": "B AI思必驰中文-俞师 精品",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=yukaimp"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147041082,
+    "lastUpdateTime": 1708912429866,
+    "name": "B AI思必驰中文-堂堂 童音",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=tangtang_boyfp"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146320022,
+    "lastUpdateTime": 1708912429866,
+    "name": "B AI思必驰中文-季师 精品",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=jlshimp"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147205580,
+    "lastUpdateTime": 1708912429866,
+    "name": "B AI思必驰中文-小军 严肃",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=xijunm"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652142303813,
+    "lastUpdateTime": 1708912429867,
+    "name": "B AI思必驰中文-小军 温和",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=xijunma"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652142382227,
+    "lastUpdateTime": 1708912429867,
+    "name": "B AI思必驰中文-小江 精品",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.8&volume=100&audioType=wav&voiceId=wjianm_xsheng"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146376840,
+    "lastUpdateTime": 1708912429867,
+    "name": "B AI思必驰中文-小睿 精品",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=tzruimp"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147056416,
+    "lastUpdateTime": 1708912429867,
+    "name": "B AI思必驰中文-方方 标准",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=gdfanf_natong"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147568084,
+    "lastUpdateTime": 1708912429867,
+    "name": "B AI思必驰中文-方方 男童",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.8&volume=100&audioType=wav&voiceId=gdfanf_boy"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147148481,
+    "lastUpdateTime": 1708912429867,
+    "name": "B AI思必驰中文-星哥 幽默",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=zxcm"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146494173,
+    "lastUpdateTime": 1708912429867,
+    "name": "B AI思必驰中文-星哥 风趣",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=zxcmp"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652142160359,
+    "lastUpdateTime": 1708912429867,
+    "name": "B AI思必驰中文-秋木 故事",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=qiumum_0gushi"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147192693,
+    "lastUpdateTime": 1708912429867,
+    "name": "B AI思必驰中文-纲叔 沉稳",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=gdgm"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147431017,
+    "lastUpdateTime": 1708912429867,
+    "name": "B AI思必驰中文-老师 磁性",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=yukaim_all"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652142226069,
+    "lastUpdateTime": 1708912429867,
+    "name": "B AI思必驰中文-考拉 电台",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=1&volume=100&audioType=wav&voiceId=kaolam_diantai"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146509534,
+    "lastUpdateTime": 1708912429867,
+    "name": "B AI思必驰中文-葛爷 淡定",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=geyoump"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147270293,
+    "lastUpdateTime": 1708912429867,
+    "name": "B AI思必驰中文-葛爷 风趣",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=geyou"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147028745,
+    "lastUpdateTime": 1708912429867,
+    "name": "B AI思必驰中文-连连 可爱",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=lzliafp"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147111575,
+    "lastUpdateTime": 1708912429867,
+    "name": "B AI思必驰中文-连连 可爱",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=lzliaf"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146532158,
+    "lastUpdateTime": 1708912429867,
+    "name": "B AI思必驰外语-BRETT 英文",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=brettmp"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": -2,
+    "lastUpdateTime": 1708912429867,
+    "name": "B AI百度中文-0106 度博文啊",
+    "url": "http://tts.baidu.com/text2audio,{\n    \"method\": \"POST\",\n    \"body\": \"tex={{java.encodeURI(java.encodeURI(speakText))}}&spd={{(speakSpeed + 5) / 10 + 4}}&per=106&cuid=baidu_speech_demo&idx=1&cod=2&lan=zh&ctp=1&pdt=301&vol=5&aue=6&pit=5&_res_tag_=audio\"\n}"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": -3,
+    "lastUpdateTime": 1708912429868,
+    "name": "B AI百度中文-4106 温和儒雅",
+    "url": "http://tts.baidu.com/text2audio,{\n    \"method\": \"POST\",\n    \"body\": \"tex={{java.encodeURI(java.encodeURI(speakText))}}&spd={{(speakSpeed + 5) / 10 + 4}}&per=4106&cuid=baidu_speech_demo&idx=1&cod=2&lan=zh&ctp=1&pdt=301&vol=5&aue=6&pit=5&_res_tag_=audio\"\n}"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146696830,
+    "lastUpdateTime": 1708912429868,
+    "name": "G AI思必驰中文-安宁 精品",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=1&volume=100&audioType=wav&voiceId=aningfp"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146826917,
+    "lastUpdateTime": 1708912429868,
+    "name": "G AI思必驰中文-小九 客服",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=xijiufp"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147179438,
+    "lastUpdateTime": 1708912429868,
+    "name": "G AI思必驰中文-小佚 平和",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=anonyf"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146560212,
+    "lastUpdateTime": 1708912429868,
+    "name": "G AI思必驰中文-小兰 温柔",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=gqlanfp"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147503481,
+    "lastUpdateTime": 1708912429868,
+    "name": "G AI思必驰中文-小兰 温柔",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=gqlanf"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146575340,
+    "lastUpdateTime": 1708912429868,
+    "name": "G AI思必驰中文-小咪 甜美",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=xmamif"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147339161,
+    "lastUpdateTime": 1708912429868,
+    "name": "G AI思必驰中文-小妖 传统",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=xiyaof"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147414309,
+    "lastUpdateTime": 1708912429868,
+    "name": "G AI思必驰中文-小妖 清新",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=xiyaof_qingxin"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147163756,
+    "lastUpdateTime": 1708912429868,
+    "name": "G AI思必驰中文-小妮 邻家",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=hyanif"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147558223,
+    "lastUpdateTime": 1708912429868,
+    "name": "G AI思必驰中文-小妮 邻家",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=hyanifa"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147545272,
+    "lastUpdateTime": 1708912429868,
+    "name": "G AI思必驰中文-小洁 清亮",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=smjief"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146670279,
+    "lastUpdateTime": 1708912429868,
+    "name": "G AI思必驰中文-小浩 标准",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=lucyfa"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146746019,
+    "lastUpdateTime": 1708912429868,
+    "name": "G AI思必驰中文-小玲 欢快",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=zhilingfp_huankuai"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146684218,
+    "lastUpdateTime": 1708912429868,
+    "name": "G AI思必驰中文-小玲 甜美",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=zhilingfp"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147133313,
+    "lastUpdateTime": 1708912429868,
+    "name": "G AI思必驰中文-小玲 甜美",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=zhilingf"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146729980,
+    "lastUpdateTime": 1708912429868,
+    "name": "G AI思必驰中文-小美 客服",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=juan1f"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146546792,
+    "lastUpdateTime": 1708912429868,
+    "name": "G AI思必驰中文-小静 甜美",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=xjingfp"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147591369,
+    "lastUpdateTime": 1708912429869,
+    "name": "G AI思必驰中文-小静 飘逸",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=xjingf"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146765292,
+    "lastUpdateTime": 1708912429869,
+    "name": "G AI思必驰中文-晶晶 知性",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=jjingfp"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147396113,
+    "lastUpdateTime": 1708912429869,
+    "name": "G AI思必驰中文-晶晶 知性",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=jjingf"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147455704,
+    "lastUpdateTime": 1708912429869,
+    "name": "G AI思必驰中文-株儿 传统",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=zzherf"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147219210,
+    "lastUpdateTime": 1708912429869,
+    "name": "G AI思必驰中文-然然 可爱",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=qianranf"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147355345,
+    "lastUpdateTime": 1708912429869,
+    "name": "G AI思必驰中文-瑶瑶 标准",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=luyaof"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652148469271,
+    "lastUpdateTime": 1708912429869,
+    "name": "G AI思必驰中文-璃璃 商务",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=lili1f_shangwu"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146779543,
+    "lastUpdateTime": 1708912429869,
+    "name": "G AI思必驰中文-璃璃 娱报",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=lili1f_yubo"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652148458689,
+    "lastUpdateTime": 1708912429869,
+    "name": "G AI思必驰中文-璃璃 电台",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=lili1f_diantai"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147469607,
+    "lastUpdateTime": 1708912429869,
+    "name": "G AI思必驰中文-砖砖 故事",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=zzhuaf"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147304309,
+    "lastUpdateTime": 1708912429869,
+    "name": "G AI思必驰中文-绝音 恐怖",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.6&volume=100&audioType=wav&voiceId=juyinf_guigushi"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147579793,
+    "lastUpdateTime": 1708912429869,
+    "name": "G AI思必驰中文-考拉 清纯",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=kaolaf"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146624551,
+    "lastUpdateTime": 1708912429869,
+    "name": "G AI思必驰中文-芳芳 客服",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=gdfanfp"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146654159,
+    "lastUpdateTime": 1708912429869,
+    "name": "G AI思必驰中文-蓝雨 传统",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=lanyuf"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146810860,
+    "lastUpdateTime": 1708912429869,
+    "name": "G AI思必驰中文-行者 精品",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=xizhefp"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147085645,
+    "lastUpdateTime": 1708912429869,
+    "name": "G AI思必驰中文-贝壳 传统",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=xbekef"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652148398736,
+    "lastUpdateTime": 1708912429869,
+    "name": "G AI思必驰中文-阿姨 标准",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.8&volume=100&audioType=wav&voiceId=yaayif"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146844931,
+    "lastUpdateTime": 1708912429869,
+    "name": "G AI思必驰中文-零八 清新",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=linbafp_qingxin"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147319609,
+    "lastUpdateTime": 1708912429869,
+    "name": "G AI思必驰中文-风吟 传统",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.8&volume=100&audioType=wav&voiceId=feyinf"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146797041,
+    "lastUpdateTime": 1708912429870,
+    "name": "G AI思必驰中文-风吟 精品",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=feyinfp"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146589303,
+    "lastUpdateTime": 1708912429870,
+    "name": "G AI思必驰中文-麻豆 娱播",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=madoufp_yubo"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146639339,
+    "lastUpdateTime": 1708912429870,
+    "name": "G AI思必驰中文-麻豆 温柔",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=madoufp_wenrou"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146953536,
+    "lastUpdateTime": 1708912429870,
+    "name": "G AI思必驰方言-何春 粤语",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=hchunf_ctn"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146866064,
+    "lastUpdateTime": 1708912429870,
+    "name": "G AI思必驰方言-叶子 上海",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=yezi1f_csh"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146918525,
+    "lastUpdateTime": 1708912429870,
+    "name": "G AI思必驰方言-大瑶 山东",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=dayaof_csd"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146901837,
+    "lastUpdateTime": 1708912429870,
+    "name": "G AI思必驰方言-文卿 四川",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=wqingf_csn"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146936161,
+    "lastUpdateTime": 1708912429870,
+    "name": "G AI思必驰方言-晓健 粤语",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=lunaif_ctn"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146970409,
+    "lastUpdateTime": 1708912429870,
+    "name": "G AI思必驰方言-木兰 河南",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=xizhuf_cyu"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652147006982,
+    "lastUpdateTime": 1708912429870,
+    "name": "G AI思必驰方言-翠花 东北",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=1&volume=100&audioType=wav&voiceId=xjingf_cdb"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1652146882937,
+    "lastUpdateTime": 1708912429870,
+    "name": "G AI思必驰方言-胖胖 四川",
+    "url": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=madoufp_yubo&text={{java.encodeURI(java.encodeURI(speakText))}}&speed=0.9&volume=100&audioType=wav&voiceId=ppangf_csn"
+  },
+  {
+    "enabledCookieJar": false,
+    "id": 1702154033416,
+    "lastUpdateTime": 1708912429866,
+    "name": "度逍遥",
+    "url": "http://tts.baidu.com/text2audio,{\n\"method\": \"POST\",\n\"body\": \"tex={{java.encodeURI(java.encodeURI(speakText))}}&spd={{(speakSpeed + 5) / 10 + 4}}&per=3&cuid=baidu_speech_demo&idx=1&cod=2&lan=zh&ctp=1&pdt=505&vol=5&aue=6&pit=5&_res_tag_=audio\"\n}"
+  }
+]
