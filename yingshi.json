@@ -20,10 +20,12 @@
             "api": "./JS/lib/drpy.min.js",
             "ext": "./JS/lib/腾云驾雾.js"
         },
-  {"key":"drpy_js_清风DJ","name":"音频 | 清风DJ[js]","type":3,"api":"./JS/lib/apiv19drpy2.min.js","ext":"./JS/lib/清风DJ.js","playerType":"2"},      
-  {"key":"drpy_js_蜻蜓FM","name":"广播 | 蜻蜓FM[js]","type":3,"api":"./JS/lib/apiv19drpy2.min.js","ext":"./JS/lib/蜻蜓FM.js","playerType":"2"},
+{"key":"drpy_js_清风DJ","name":"音频 | 清风DJ[js]","type":3,"api":"./JS/lib/apiv19drpy2.min.js","ext":"./JS/lib/清风DJ.js","playerType":"2"},      
+ {"key":"drpy_js_蜻蜓FM","name":"广播 | 蜻蜓FM[js]","type":3,"api":"./JS/lib/apiv19drpy2.min.js","ext":"./JS/lib/蜻蜓FM.js","playerType":"2"},
   
-{"key":"drpy_js_有声小说","name":"听书 | 有声小说[js]","type":3,"api":"./JS/lib/apiv19drpy2.min.js","ext":"./JS/lib/有声小说吧.js","playerType":"2"},        
+{"key":"drpy_js_有声小说","name":"听书 | 有声小说[js]","type":3,"api":"./JS/lib/apiv19drpy2.min.js","ext":"./JS/lib/有声小说吧.js","playerType":"2"},       
+        
+        
 {
             "key": "T4-cctv",
             "name": "🐞T4|央视",
@@ -177,20 +179,17 @@
 {"key":"T4-a8","name":"🐞T4|视频-A8(T4)","type":4,"api":"https://catbox.n13.club/a8.php"},
 {"key":"T4-bmtv","name":"🐞T4|视频-MTV(T4)","type":4,"api":"https://catbox.n13.club/bili.php?id=bMTV"},
 {"key":"T4-Bliych","name":"🐞T4|视频-演唱会(T4)","type":4,"api":"https://catbox.n13.club/bili.php?id=Bliych"},
-{"key":"T4-tangdou","name":"🐞T4|视频-糖豆(T4)","type":4,"api":"https://catbox.n13.club/tangdou.php"},    
-{"key":"T4-nongmin","name":"🐞T4|视频-农民(T4)","type":4,"api":"https://catbox.n13.club/nongmin.php"},   
+ {"key":"T4-tangdou","name":"🐞T4|视频-糖豆(T4)","type":4,"api":"https://catbox.n13.club/tangdou.php"},    
+  {"key":"T4-nongmin","name":"🐞T4|视频-农民(T4)","type":4,"api":"https://catbox.n13.club/nongmin.php"},     
   {"key":"T4-6v","name":"🐞T4|T4-6V","type":4,"api":"https://catbox.n13.club/6v.php"}, 
-  {"key":"T4-mingri","name":"🐞T4|明日影视","type":4,"api":"https://catbox.n13.club/mingri.php"}, 
-{"key":"T4-275ts","name":"🐞T4|音频-275听书(T4)","type":4,"api":"https://catbox.n13.club/275ts.php"}, 
+  {"key":"T4-mingri","name":"🐞T4|明日影视","type":4,"api":"https://catbox.n13.club/mingri.php"},    
+ {"key":"T4-275ts","name":"🐞T4|音频-275听书(T4)","type":4,"api":"https://catbox.n13.club/275ts.php"},
  {"key":"T4-yvgao","name":"🐞T4|预告片(T4)","type":4,"api":"https://catbox.n13.club/yugaopian.php"},
- {"key":"T4-jijiuzhishi","name":"🐞T4|急救知识(T4)","type":4,"api":"https://catbox.n13.club/jijiu.php"},           
-  {"key":"T4-dongman","name":"🐞T4|动漫巴士(T4)","type":4,"api":"https://catbox.n13.club/dongmanbs.php"},   
- {"key":"T4-douban","name":"🐞T4|豆瓣推荐","type":4,"api":"https://catbox.n13.club/douban.php"},
-{"key":"T4-aote","name":"🐞T4|奥特","type":4,"api":"https://catbox.n13.club/at.php"},
-{"key":"T4-heihu","name":"🐞T4|黑狐","type":4,"api":"https://catbox.n13.club/heihu.php"},
- {"key":"T4-juquan","name":"🐞T4|剧圈圈","type":4,"api":"https://catbox.n13.club/juquan.php"},
-        
-                      {
+  {"key":"T4-jijiuzhishi","name":"🐞T4|急救知识(T4)","type":4,"api":"https://catbox.n13.club/jijiu.php"},  
+   {"key":"T4-douban","name":"🐞T4|豆瓣推荐","type":4,"api":"https://catbox.n13.club/douban.php"},
+{"key":"T4-heihu","name":"🐞T4|黑狐","type":4,"api":"https://catbox.n13.club/heihu.php"},  
+{"key":"T4-juquan","name":"🐞T4|剧圈圈","type":4,"api":"https://catbox.n13.club/juquan.php"},
+                {
             "key": "drpy_js_优酷1",
             "name": "🐥优酷蛋(官源)",
             "type": 3,
@@ -2226,7 +2225,7 @@
         {
             "name": "LR3",
             "type": 1,
-            "url": "https://api.json.icu/api/?key=b1f3b1a9e1c0a42ae969db10bd315a95&url=",
+            "url": "https://jx.jsonplayer.com/player/?url=",
             "ext": {
                 "flag": [
                     "imgo",
@@ -3174,7 +3173,7 @@
             "url": "https://okjx.cc/?url="
         },
         {
-            "name": "m3u8解析",
+            "name": "解析7",
             "type": 0,
             "url": "https://jx.m3u8.tv/jiexi/?url=",
             "ext": {
