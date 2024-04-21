@@ -20,7 +20,176 @@
             "api": "./JS/lib/drpy.min.js",
             "ext": "./JS/lib/腾云驾雾.js"
         },
+{"key":"drpy_js_清风DJ","name":"音频 | 清风DJ[js]","type":3,"api":"./JS/lib/apiv19drpy2.min.js","ext":"./JS/lib/清风DJ.js","playerType":"2"},      
+ {"key":"drpy_js_蜻蜓FM","name":"广播 | 蜻蜓FM[js]","type":3,"api":"./JS/lib/apiv19drpy2.min.js","ext":"./JS/lib/蜻蜓FM.js","playerType":"2"},
+  
+{"key":"drpy_js_有声小说","name":"听书 | 有声小说[js]","type":3,"api":"./JS/lib/apiv19drpy2.min.js","ext":"./JS/lib/有声小说吧.js","playerType":"2"},       
+        
+        
+{
+            "key": "T4-cctv",
+            "name": "🐞T4|央视",
+            "type": 4,
+            "api": "https://catbox.n13.club/cctv.php",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "ext": true
+},
+        
         {
+            "key": "T4-nangua",
+            "name": "🐞T4|南瓜🐞",
+            "type": 4,
+            "api": "https://catbox.n13.club/nangua.php",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "ext": true
+},
+
+{
+            "key": "T4-360",
+            "name": "🐞T4|360大全",
+            "type": 4,
+            "api": "https://catbox.n13.club/360.php",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "ext": true
+},
+{
+            "key": "T4-yinyuetai",
+            "name": "🐞T4|音悦台",
+            "type": 4,
+            "api": "https://catbox.n13.club/yyt.php",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "ext": true
+},
+
+        {
+            "key": "T4-jp",
+            "name": "🐞T4|荐片🐞",
+            "type": 4,
+            "api": "https://catbox.n13.club/jianpian.php",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "ext": true
+},
+
+{
+            "key": "T4-iktv",
+            "name": "🐞T4|IKTV",
+            "type": 4,
+            "api": "https://catbox.n13.club/iktv.php",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "ext": true
+},
+      {
+            "key": "T4-duanju5",
+            "name": "🐞T4|短剧屋",
+            "type": 4,
+            "api": "https://catbox.n13.club/duanju5.php",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "ext": true
+},  
+	{
+            "key": "T4-bpys",
+            "name": "🐞T4|白嫖影视",
+            "type": 4,
+            "api": "https://catbox.n13.club/bpys.php",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "ext": true
+},
+        
+{
+            "key": "T4-极光",
+            "name": "🐞T4|极光TV",
+            "type": 4,
+            "api": "https://catbox.n13.club/jiguang.php",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "ext": true
+},
+{
+            "key": "T4-a8",
+            "name": "🐞T4|A8音乐",
+            "type": 4,
+            "api": "https://catbox.n13.club/a8.php",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "ext": true
+},
+
+{
+            "key": "T4-兔小贝",
+            "name": "🐞T4|兔小贝",
+            "type": 4,
+            "api": "https://catbox.n13.club/tuxiaobei.php",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 0,
+            "ext": true
+},
+
+{
+            "key": "T4-caiji",
+            "name": "🐞T4|采集合集",
+            "type": 4,
+            "api": "https://catbox.n13.club/caiji.php",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 0,
+            "ext": true
+},
+
+{"key":"T4-qingting","name":"🐞T4|音频-蜻蜓(T4)","type":4,"api":"https://catbox.n13.club/qingting.php"},
+{"key":"yinyue","name":"🐞T4|音频-258(T4)","type":4,"api":"https://catbox.n13.club/yyyy.php"},
+{"key":"T4-suishenting","name":"🐞T4|音频-随身听(T4)","type":4,"api":"https://catbox.n13.club/suishenting.php"},
+{"key":"T4-qingfeng","name":"🐞T4|音频-清风(T4)","type":4,"api":"https://catbox.n13.club/qingfengdj.php"},
+{"key":"T4-djuu","name":"🐞T4|音频-DJUU(T4)","type":4,"api":"https://catbox.n13.club/djuu.php"},
+{"key":"xiaoyi","name":"🐞T4|音频-小姨(T4)","type":4,"api":"https://catbox.n13.club/wy.php"},
+{"key":"MV","name":"🐞T4|视频-酷奇(T4)","type":4,"api":"https://catbox.n13.club/mv2.php"},
+{"key":"yinyuetai","name":"🐞T4|视频-音悦(T4)","type":4,"api":"https://catbox.n13.club/yyt.php"},
+{"key":"T4-xiaogou","name":"🐞T4|视频-小狗(T4)","type":4,"api":"https://catbox.n13.club/xiaogou.php"},
+{"key":"T4-iktv","name":"🐞T4|视频-iktv(T4)","type":4,"api":"https://catbox.n13.club/iktv.php"},
+{"key":"T4-a8","name":"🐞T4|视频-A8(T4)","type":4,"api":"https://catbox.n13.club/a8.php"},
+{"key":"T4-bmtv","name":"🐞T4|视频-MTV(T4)","type":4,"api":"https://catbox.n13.club/bili.php?id=bMTV"},
+{"key":"T4-Bliych","name":"🐞T4|视频-演唱会(T4)","type":4,"api":"https://catbox.n13.club/bili.php?id=Bliych"},
+ {"key":"T4-tangdou","name":"🐞T4|视频-糖豆(T4)","type":4,"api":"https://catbox.n13.club/tangdou.php"},    
+  {"key":"T4-nongmin","name":"🐞T4|视频-农民(T4)","type":4,"api":"https://catbox.n13.club/nongmin.php"},     
+  {"key":"T4-6v","name":"🐞T4|T4-6V","type":4,"api":"https://catbox.n13.club/6v.php"}, 
+  {"key":"T4-mingri","name":"🐞T4|明日影视","type":4,"api":"https://catbox.n13.club/mingri.php"},    
+ {"key":"T4-275ts","name":"🐞T4|音频-275听书(T4)","type":4,"api":"https://catbox.n13.club/275ts.php"},
+ {"key":"T4-yvgao","name":"🐞T4|预告片(T4)","type":4,"api":"https://catbox.n13.club/yugaopian.php"},
+  {"key":"T4-jijiuzhishi","name":"🐞T4|急救知识(T4)","type":4,"api":"https://catbox.n13.club/jijiu.php"},  
+   {"key":"T4-douban","name":"🐞T4|豆瓣推荐","type":4,"api":"https://catbox.n13.club/douban.php"},
+{"key":"T4-heihu","name":"🐞T4|黑狐","type":4,"api":"https://catbox.n13.club/heihu.php"},  
+{"key":"T4-juquan","name":"🐞T4|剧圈圈","type":4,"api":"https://catbox.n13.club/juquan.php"},
+                {
             "key": "drpy_js_优酷1",
             "name": "🐥优酷蛋(官源)",
             "type": 3,
@@ -47,19 +216,6 @@
             "api": "./JS/lib/drpy2.min.js",
             "ext": "./JS/js/百忙无果.js"
         },
-
-        {
-      "key": "亮亮2",
-      "name": "💡┃亮亮秒播┃",
-      "type": 3,
-      "jar": "https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1704761840381/c (1).txt;md5;bb155c3f0133bbce4756ad52003f5968",
-      "api": "csp_AppYsV2",
-      "ext": "http://xiutan.shiyifacai.com/zuoan/api.php/app/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0
-    },
-        
         {
             "key": "drpy_js_菜狗",
             "name": "🇹┃搜狗官┃秒播",
@@ -81,10 +237,33 @@
 
         {
             "key": "nangua",
-            "name": "🥨南瓜影视[cat]",
+            "name": "🪶南瓜影视[cat]",
             "type": 3,
             "api": "./JS/ng_open.js", 
             "jar": "./jar/f.jar"
+        },
+        
+        {
+            "key": "csp_yydflive-2",
+            "name": "💞电视电台",
+            "type": 3,
+            "playerType": 1,
+            "jar": "http://47.108.190.141/wx/zb/zb.jar;md5;bf1b124a45435a1be4f54d148280a749",
+            "api": "csp_zb",
+            "searchable": 0,
+            "changeable": 0,
+            "ext": "http://47.108.190.141/wx/zb/live.json"
+        },
+        
+        {
+            "key": "安博",
+            "name": "🎭安博T4(挂梯秒播)",
+            "type": 4,
+            "api": "https://ali.xn--sxr.hz.cz/site/ub1818",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 0
         },
         
         {
@@ -106,7 +285,7 @@
         },
         {
             "key": "夏木影视自营站",
-            "name": "🌺夏木影视",
+            "name": "🪶夏木影视",
             "type": 1,
             "api": "http://video.90tutu.cn/xzj.php/provide/vod/",
             "playerType": 2,
