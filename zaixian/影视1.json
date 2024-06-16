@@ -1,0 +1,31 @@
+{
+    "force_refresh": 0,
+    "source": "https://gitee.com/bestpvp/source/raw/master/source/stable/main.json",
+    "app_show_dialog": true,
+    "jar_show_dialog": true,
+    "app_require_password": false,
+    "jar_require_password": true,
+    "app_password": "240420",
+    "jar_password": "240610",
+    "universal_password": "gongjin,wolong,19831938,qwe3706,hbf305467,525260wp,199001,0318lang,wf3344,258258swg,xiaoxiao1jingjing,12345678www,3452791Lg,yanglu77,qi76712077,lewo119%,zxcv2024,l666888,max6688,ch19940426,nmtfcl176,888,LP866167,yzls1123,qwe147,L7758258,wcc112233,l7151877,wp7195,chenxiao900210,bibi1975,royce,uwiange,zy432100,203yinsh,jm3377087,yang65045,xqb1976114,072876,65n65n65n,yuxiao1986,pxzx12345,Lj196594,Leina628,fxy0603,235689vd,a1314520,830618wz,yyd040709,z11054188,yozzi8888,kingchen11,si720124,cjj0914,say85u5,DYJason51369,lin0723,pan902236,ycx120425,su0852,abc721521,568923,YN190701520,kk123456,zq199508,mokdai,vinc6134,weizi6763,5201314as,mdd888888,zm@731011$,qwe123123,tkk144,shupit327,xuzhhcosl,xdzz06093,yyy168yyy,stitch666,sunny888,viplife,Aa111111,qwer1314,yjc670623,tommy20,zp1617,liuyan520,123wxpss,weijaysong,zjl111,longnian888,mumu1080,mircc6789,2007lgzl,zq3368550,zxj19781227,bf29299,asd123123,zboy007,050115zd,hzw138639,k2037510,Vip666,Allen-2024,x201211,w594563b2,PINGWEN520,lee685424,xmjj2000,hou123456,666666,gl5656,as2612834,cnnn1397,2024wl,324324lxh,wangye001,chao7776,ll785122,wsg974,a123456a,flzx3000cysyhl9t,sh811120,jc28707,g c b 196937,zmx1206,660668SGJ,hai334450,88909333,q4600267,zhoujun2024ms,han123456,xcj911911,nmldc5588,manbu725,yjw4118197,cs1858,gfy2004,woaini555,tx20152145,1120mrchen,zcb335066,6xhj6,0815zhou,liuxue66,LIPIN,811225myb,dalao666,lytest521,cz8282,andysze9999,tfmao520,90wenhua,yuxiang2k,Mscd123456,18055205@qq.com,hwt20171115,g51,zfs770122,830820a,mei1li2de,621814abc,a8447656,wtq7785121,admin114959,h13097320103,fh7816,quji1234,zsl971124,bnocom5229,246437xxb,dw755,311cc,sxfy9129,a119924,1hblsqt,,tyh73250,i357o98z,zxcv123456,qq584520,abcd251885,tvbox2024,dama0628,yangxin123,Zb357159,DS1368,lxs35,chn001,fx69216896,600370a,0721fishman,qq3045457,holmes1861,810308cc,5215ylj,ywfy0102,ghost3237,lb6208,lgq1024,tvbox180,gzy891013,1111zzzz,qqww133123,8490116wz,xueyun0812,lsj123,123456nan,woyao888,Lk450333,loafer123",
+    "app_message": "本APP以及「时光机」均为免费开源项目, 仅供测试, 请勿付费购买！\n播放时若出现广告均为三方插入, 与本公众号无关，请勿上当!",
+    "jar_message": "关注后回复: “签到”, 免费获取最新密钥",
+    "filter": [
+        "王小二放牛娃.xyz",
+        "神秘的哥哥们",
+        "|",
+        "｜",
+        "防失联",
+        "关注",
+        "【",
+        "】",
+        "┃ "
+    ],
+    "prefix": "★沧海笑TV★",
+    "prefix_wolong": "★卧沧海笑TV★",
+    "title": "沧海笑修改内置",
+    "picture": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/zaixian/app_qrcode.png",
+    "link": "https://www.lintech.work/",
+    "jxUrl": "https://www.lintech.work/api/m3u8/parse?token=%s&url=%s",
+    "notice": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/zaixian/影视2.json"
+}
