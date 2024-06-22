@@ -36,7 +36,61 @@
             "jar": "./jar/spider.jar"
         },
         
-       
+{
+            "key": "吾爱学习",
+            "name": "🅱┃哔哩┃吾爱学习",
+            "type": 3,
+            "api": "csp_Bili",
+            "searchable": 0,
+            "quickSearch": 0,
+            "filterable": 1,
+            "ext": "./json/吾爱学习.json",
+            "jar": "./jar/spider.jar"
+        },
+{
+      "key": "短剧",
+      "name": "💛吾爱短剧",
+      "type": 3,
+      "api": "csp_Bili",
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
+      },
+      "searchable": 1,
+      "quickSearch": 0,
+      "changeable": 0,
+      "ext": "./json/吾爱短剧.m3u",
+            "jar": "./jar/0928.jar"
+    },
+ {
+      "key": "MTV",
+      "name": "🎧明星┃MV",
+      "type": 3,
+      "api": "csp_Bili",
+      "jar": "./jar/fty.jar",
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
+      },
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 0,
+      "ext": "./json/MTV.json"
+    },       
+       {
+      "key": "UP主",
+      "name": "🖤吾爱UP主",
+      "type": 3,
+      "api": "csp_Bili",
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
+      },
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 0,
+      "ext": "./json/吾爱UP主合集.json"
+    },
         
         {
             "key": "歌手",
@@ -97,6 +151,22 @@
             "ext": "./json/吾爱乐器.json",
             "spider": "./jar/公众号吾爱有三日月与卿0723.jar"
         },
+        
+        {
+      "key": "体育",
+      "name": "💋吾爱体育",
+      "type": 3,
+      "api": "csp_Bili",
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
+      },
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 0,
+      "ext": "./json/吾爱体育.m3u"
+    },
+
         {
             "key": "牙齿",
             "name": "🅱️┃哔哩┃牙齿",
