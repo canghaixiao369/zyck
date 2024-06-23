@@ -17,6 +17,7 @@
       "name": "腾讯官源┃秒播",
       "type": 3,
       "api": "./JS/lib/apiv429drpy2.min.js",
+      "jar": "./jar/tw2.jar",     
       "ext": "./JS/lib/腾云驾雾.js"
     },
  {
