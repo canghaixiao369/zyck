@@ -6,7 +6,7 @@
             "url": "./tv/mtv.txt",
             "playerType": 1,
             "epg": "http://diyp.112114.xyz/?ch={name}&date={date}",
-            "logo": "https://epg.112114.xyz/logo/{name}.png"
+            "logo": "./tw.jpg"
         }
     ],
     "spider": "./jar/spider.jar",
@@ -16,7 +16,7 @@
       "key": "drpy_js_腾云驾雾",
       "name": "腾讯官源┃秒播",
       "type": 3,
-      "api": "./JS/lib/apiv429drpy2.min.js",
+      "api": "./JS/js/apiv487drpy2.min.js",
       "jar": "./jar/tw2.jar",     
       "ext": "./JS/lib/腾云驾雾.js"
     },
@@ -104,10 +104,10 @@
       ]
     },
         
-{"key":"drpy_js_清风DJ","name":"音频 | 清风DJ[js]","type":3,"api":"./JS/lib/apiv19drpy2.min.js","ext":"./JS/lib/清风DJ.js","playerType":"2"},      
- {"key":"drpy_js_蜻蜓FM","name":"广播 | 蜻蜓FM[js]","type":3,"api":"./JS/lib/apiv19drpy2.min.js","ext":"./JS/lib/蜻蜓FM.js","playerType":"2"},
+{"key":"drpy_js_清风DJ","name":"音频 | 清风DJ[js]","type":3,"api":"./JS/js/apiv19drpy2.min.js","ext":"./JS/lib/清风DJ.js","playerType":"2"},      
+ {"key":"drpy_js_蜻蜓FM","name":"广播 | 蜻蜓FM[js]","type":3,"api":"./JS/js/apiv19drpy2.min.js","ext":"./JS/lib/蜻蜓FM.js","playerType":"2"},
   
-{"key":"drpy_js_有声小说","name":"听书 | 有声小说[js]","type":3,"api":"./JS/lib/apiv19drpy2.min.js","ext":"./JS/lib/有声小说吧.js","playerType":"2"},       
+{"key":"drpy_js_有声小说","name":"听书 | 有声小说[js]","type":3,"api":"./JS/js/apiv19drpy2.min.js","ext":"./JS/lib/有声小说吧.js","playerType":"2"},       
         
 {
       "key": "yqk",
