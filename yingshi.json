@@ -16,7 +16,7 @@
 
  {
       "key": "drpy_js_腾云驾雾",
-      "name": "腾讯官源┃秒播",
+      "name": "🌿腾讯官源",
       "type": 3,
       "api": "./JS/js/apiv487drpy2.min.js",
       "jar": "./jar/tw2.jar",     
@@ -24,8 +24,123 @@
     },
     
     {
+      "key": "csp_KungFu404",
+      "name": "🔥设置Token",
+      "type": 3,
+      "api": "csp_KungFu404",
+      "searchable": 0,
+      "filterable": 0,
+      "changeable": 0,
+      "jar": "./jar/Token.jar",
+      "ext": "http://127.0.0.1:9978/file/tvfan/token.txt"
+    },
+    {
+            "key": "hipy_js_采集之王[合]",
+            "name": "🌾采集大全",
+            "type": 3,
+            "api": "./JS/js/drpy.min.js",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "order_num": 210,
+            "ext": "./JS/js/采集之王[合].js?type=url&params=./json/采集静态.json"
+        },
+   {
+   		"key": "hipy_js_啊哈DJ[听]",
+   		"name": "🌻苹果DJ[听](drpy_t3)",
+   		"type": 3,			
+   		"api": "./JS/js/drpy.min.js",
+   		"searchable": 1,			
+   		"quickSearch": 1,		
+   		"filterable": 1,			
+   		"order_num": 0,			
+   		"ext": "./JS/js/啊哈DJ[听].js"		
+   		}, 
+   		
+   		{
+			"key": "hipy_js_映播TV",
+			"name": "🌾映播TV(drpy_t3)",
+			"type": 3,
+			"api": "./JS/js/drpy.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./JS/js/映播TV.js"
+		},
+    {
+    "key":"py_cctv",
+    "name": "💐央视",
+    "type": 3,
+    "api": "./py/py_cctv_2.py",
+    "searchable": 0,
+    "quickSearch": 0,
+    "filterable": 0
+    },
+    
+      
+{
+	"key": "央视剧场",
+	"name": "🌾央视剧场[cat]",
+	"type": 3,
+	"api": "./JS/js/央视剧场.js"
+},
+  {
+			"key": "FirstAid",
+			"name": "🌻急救知识 ",
+			"type": 3,
+			"api": "csp_FirstAid",
+			"jar": "./jar/pg.jar?md5=7633f8ea346c082b7aa163be58aed023",
+			"searchable": 0,
+			"quickSearch": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 3.8
+			}
+		},
+	{
+            "key": "drpy_js_酷6网",
+            "name": "酷6网[js]",
+            "type": 3,
+            "api": "./JS/js/drpy2.min.js",
+            "ext": "./JS/lib/酷6网.js"
+        },	
+		{
+            "key": "drpy_js_看了么",
+            "name": "看了么[js]",
+            "type": 3,
+            "api": "./JS/js/drpy2.min.js",
+            "ext": "./JS/lib/看了么.js"
+        },
+        
+        {
+            "key": "drpy_js_广播迷FM",
+            "name": "广播迷FM[js]",
+            "type": 3,
+            "api": "./JS/js/drpy2.min.js",
+            "ext": "./JS/lib/广播迷FM.js"
+        },
+      {
+            "key": "drpy_js_看看屋",
+            "name": "看看屋[js]",
+            "type": 3,
+            "api": "./JS/js/drpy2.min.js",
+            "ext": "./JS/lib/看看屋.js"
+        },  
+       {"key":"drpy_js_网易公版影像","name":"聚合 | 网易公版影像[js]","type":3,"api":"./JS/js/drpy2.min.js","ext":"./JS/lib/网易公版影像.js"}, 
+    {
+      "key": "drpy_js_短视频",
+      "name": "📲┃短视频[js]",
+      "type": 3,
+      "api": "./JS/js/drpy2.min.js",
+      "ext": "./JS/lib/短视频.js"
+    },
+    
+    
+    {
       "key": "天天",
-      "name": "天天┃App",
+      "name": "🌷天天┃App",
       "type": 3,
       "api": "csp_TTian",
       "jar": "./jar/fix240620.jar",
@@ -34,7 +149,7 @@
     },
     {
       "key": "热播",
-      "name": "热播┃App",
+      "name": "🌼热播┃App",
       "type": 3,
       "api": "csp_TTian",
       "jar": "./jar/fix240620.jar",
@@ -43,13 +158,25 @@
     },
     {
       "key": "追剧",
-      "name": "追剧┃App",
+      "name": "🍄追剧┃App",
       "type": 3,
       "api": "csp_TTian",
       "jar": "./jar/fix240620.jar",
       "playerType": 2,
       "ext": "http://app.kzjtv.com"
     },      
+    {
+      "key": "csp_XYQ电影牛",
+      "name": "🍖┃电影牛┃影院",
+      "type": 3,
+      "api": "csp_XYQHiker",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "jar": "./jar/XYQH.jar",
+      "ext": "./json/电影牛.json"
+    },
+    
     {
             "key": "南瓜",
             "name": "🎃南瓜┃App",
@@ -64,7 +191,7 @@
     
  {
 			"key": "hipy_js_一起看",
-			"name": "一起看(drpy_t3)",
+			"name": "🍁一起看(drpy_t3)",
 			"type": 3,
 			"api": "./JS/lib/drpy2.min.js",
 			"searchable": 1,
@@ -76,7 +203,7 @@
 		
 	{
 			"key": "hipy_js_网飞猫[优]",
-			"name": "网飞猫[优](drpy_t3)",
+			"name": "🌸网飞猫[优](drpy_t3)",
 			"type": 3,
 			"api": "./JS/lib/drpy2.min.js",
 			"searchable": 1,
@@ -84,10 +211,34 @@
 			"filterable": 1,
 			"order_num": 92,
 			"ext": "./JS/js/网飞猫[优].js"
-		},		
+		},	
+		
+	{
+      "key": "csp_Ikanbot",
+      "name": "👾Ikanbot",
+      "type": 3,
+      "api": "csp_Ikanbot",
+       "jar": "./jar/custom_spider.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://v.aikanbot.com"
+    },
+    
+    {
+      "key": "csp_LocalFile",
+      "name": "💻本地视频",
+      "type": 3,
+      "api": "csp_LocalFile",
+      "jar": "./jar/custom_spider.jar",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "type_flag": 0
+    },
         {
 			"key": "酷狗",
-			"name": "酷狗",
+			"name": "🥯酷狗",
 			"type": 3,
 			"api": "csp_Kugou",
 			 "jar": "./jar/pg.jar?md5=7633f8ea346c082b7aa163be58aed023",
@@ -97,7 +248,7 @@
 		},
 		{
 			"key": "Iktv",
-			"name": "KTV",
+			"name": "🍔KTV",
 			"type": 3,
 			"api": "csp_Iktv",
 			"jar": "./jar/pg.jar?md5=7633f8ea346c082b7aa163be58aed023",
@@ -107,7 +258,7 @@
 		},
 		{
 			"key": "Yinyuetai",
-			"name": "音悦台",
+			"name": "🏡音悦台",
 			"type": 3,
 			"api": "csp_Yinyuetai",
 			"jar": "./jar/pg.jar?md5=7633f8ea346c082b7aa163be58aed023",
@@ -115,6 +266,71 @@
 			"changeable": 0,
 			"order_num": 9999
 		},
+		{"key": "华为资源",  "name": "🏺华为", "type": 1, "api": "https://cjhwba.com/api.php/provide/vod/?ac=list",  "searchable": 1,  "quickSearch": 1
+    },       
+    {"key": "华为资源2",  "name": "💖华为2", "type": 1, "api": "https://subocaiji.com/api.php/provide/vod/at/json",  "searchable": 1,  "quickSearch": 1
+ 
+    },
+    
+    {"key": "360采集",  "name": "🪲360采集", "type": 1, "api": "https://360zy.com/api.php/provide/vod/at/json",  "searchable": 1,  "quickSearch": 1
+ 
+    },
+{"key": "新浪采集",  
+"name": "🍉新浪采集", 
+"type": 1, 
+"api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/",  
+"searchable": 1,  
+"quickSearch": 1
+ 
+    },
+    
+{"key": "金鹰采集",  
+"name": "🍓金鹰采集", 
+"type": 1, 
+"api": "https://jyzyapi.com/provide/vod/at/json",  
+"searchable": 1,  
+"quickSearch": 1
+ 
+    },
+    
+{"key": "采集",  
+"name": "🍇采集", 
+"type": 1, 
+"api": "https://www.hongniuzy2.com/api.php/provide//vod/",  
+"searchable": 1,  
+"quickSearch": 1
+ 
+    },
+{
+      "key": "zy_新浪",
+      "name": "🏄🏻┃新浪资源",
+      "type": 1,
+      "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "categories": [
+        "动漫",
+        "综艺",
+        "纪录片",
+        "动作片",
+        "爱情片",
+        "科幻片",
+        "战争片",
+        "剧情片",
+        "恐怖片",
+        "喜剧片",
+        "大陆剧",
+        "港澳剧",
+        "台湾剧",
+        "欧美剧",
+        "动漫电影",
+        "韩剧",
+        "日剧",
+        "泰剧",
+        "体育"
+      ]
+    },		
 		
 {"key": "豪华资源",  "name": "👉┃豪华", "type": 1, "api": "https://hhzyapi.com/api.php/provide/vod/?ac=list",  "searchable": 1,  "quickSearch": 1,
  "categories": [
@@ -153,7 +369,7 @@
         
 {
       "key": "yqk",
-      "name": "一起看[cat]",
+      "name": "🥭一起看[cat]",
       "type": 3,
       "api": "./JS/yqktv_open.js"
     },       
@@ -679,11 +895,22 @@
             "name": "🌈┃迪迪┃App",
             "type": 3,
             "api": "csp_AppYsV2",
-            "jar": "./jar/maoji.jar",
+            "jar": "./jar/fty.jar",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 0,
             "ext": "https://api123.adys.app/xgapp.php/v3/"
+        },
+        {
+            "key": "聚合",
+            "name": "🐭影视聚合┃解析",
+            "type": 3,
+            "api": "csp_AppYsV2",
+            "jar": "./jar/fty.jar",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://www.tvkuys.xyz/api.php/app/"
         },
         {
             "key": "贱贱",
@@ -883,7 +1110,7 @@
             "name": "🌙少泽影客（APP）",
             "type": 3,
             "api": "csp_AppYsV2",
-            "jar": "./jar/0606.jar",
+            "jar": "./jar/fty.jar",
             "ext": "https://yk.shaozeyy.com/api.php/app/"
         },
         {
@@ -891,7 +1118,7 @@
             "name": "🌙无限影视网（APP）",
             "type": 3,
             "api": "csp_AppYsV2",
-            "jar": "./jar/0606.jar",
+            "jar": "./jar/fty.jar",
             "ext": "https://www.wxtv.net/api.php/app/"
         },
         
@@ -1063,7 +1290,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "https://www.gsjtlxy.top/xgapp.php/v3/",
-            "jar": "./jar/yydf.jar"
+            "jar": "./jar/fty.jar"
         },
         {
             "key": "csp_XYQHiker_电影牛影院",
@@ -1130,7 +1357,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "http://106.52.241.21:83/api.php/app/",
-            "jar": "./jar/xhkw66.jar;md5;c435869db6a928f45df09b736d81f02f"
+            "jar": "./jar/fty.jar;md5;c435869db6a928f45df09b736d81f02f"
         },
         {
             "key": "热播",
@@ -1177,17 +1404,7 @@
             "ext": "./json/耐看.json",
             "jar": "./jar/xhkw66.jar;md5;c435869db6a928f45df09b736d81f02f"
         },
-        {
-            "key": "csp_XBPQ_haoxi",
-            "name": "🎬┃影视┃好戏",
-            "type": 3,
-            "api": "csp_XBPQ",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "./json/好戏.json",
-            "jar": "./jar/custom_spider1.jar"
-        },
+        
 
         {
             "key": "subaibai",
@@ -1278,8 +1495,8 @@
                 "其他片",
                 "体育赛事",
                 "海外剧"
-            ],
-            "jar": "./jar/custom_spider1.jar"
+            ]
+           
         },
         {
             "key": "索尼",
@@ -1314,21 +1531,10 @@
                 "欧美综艺",
                 "足球",
                 "影视解说"
-            ],
-            "jar": "./jar/custom_spider1.jar"
+            ]
+          
         },
-        {
-            "key": "骑骑影院",
-            "name": "🎬┃影视┃骑骑",
-            "type": 3,
-            "playerType": 2,
-            "api": "csp_AppYsV2",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://www.gsjtlxy.top/xgapp.php/v3/",
-            "jar": "./jar/custom_spider1.jar"
-        },
+
         {
             "key": "zy_U酷资源",
             "name": " 🎬┃影视┃U酷",
@@ -1481,15 +1687,7 @@
             "ext": "http://rzys.xyz",
             "jar": "./jar/Yoursmile.jar"
         },
-        {
-            "key": "追忆",
-            "name": "🎬┃影视┃追忆",
-            "type": 3,
-            "api": "csp_Appto",
-            "playerType": 2,
-            "ext": "kVuIt2RRCkF2aaUQ/tRDng0xixNwS1YzLTR2ZWIRoeZuBR6foSvKpFzROP6SYD+xee2Pid+GdwE4YIdXdWdTZm6byVUDz6NsLe8bZgbM4Jh28u/cmuhteoyxaNXdZ8IDERVMLBvOVgJStN8HNapFs+whGI/ls/gGyIu/MwJ8eDo0sRFqx68+aYWOn3/vB4No7D59GKHmxMY0zMdk7l4vuJa1uKEPkN9aVb5yvrtK4otsS2YcrK8k3yQ5jcvEgXvx0IbMjieKzvEj8bMtkebPDqR0IgzqolJCgA+ZkhNnPKvYizqsNGxzvTRL/w2LyL1/E6xGVk+eiayVZImjLyqqMJ2HQ7jNFmcQ7bnsOOofrAFVzmLls1TRZuhBiZqX/GpljYXji1i4CgimE8dQdb/Bm1hBJZ+EPJwPFVELFlVYrx3+7tSg/n0yUB2dstDJIZAX0otUgX8joU3D9fPlpRX514tNEhPRa3ocoruEU81osVNiQ7/pEXP+Cxn40UNLudttKj1YSPESGtewQYnsbygGBFY8ddkOhhqHmcWC3IxgljigEgQO3bAvH2qLQs5rXLm3s2RtIqSipdG9OlGf4q35swc/wfiTLHDUJIO5zIFxfqQmRXbHiWqkz5yL2x6z0EKT04YMo+tnPrHxmrp9yeYDZSy39j5/D3Xt3gQTXoPyv9OiBEI/kxcUbPDIoaiw6iZTUiUCDuHRm31d/H7LOpQcAndUy2XbV8Sa+q/lO++HspjWgLwp5T/uxfvPLuctmkdYq6zdybwHNpNWy5KUOyra81dO0QfuHu6+2keXtQZzE8JiahHVFou+BxTa79MXg3EEUjPmmlVS6FFK12uSutZiJkPWxBuvBCmpBzn0Rq0IsDFkCvgQpqnxDi6NayNATUPu8J/HAiIs04d+xDjFwkBKvXeO5Hdvs4zmURqND/gtEYm47rlqjLQ5fFQqgL0qK3zPZzQSJ/Vya9gaTesDImNPqYwOrzx6RGRBHnqiXSxJB7+XHvZ5sZJ8uIcV7V+pQv3Dx",
-            "jar": "./jar/fix1021.jar"
-        },
+        
         {
             "key": "橘子",
             "name": "🎬┃影视┃橘子",
@@ -1510,7 +1708,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "https://yayayaaapp.ynf.icu/api.php/app/",
-            "jar": "./jar/Yoursmile.jar"
+            "jar": "./jar/fty.jar"
         },
         {
             "key": "csp_Cokemv",

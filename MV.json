@@ -37,6 +37,14 @@
             "ext": "./json/吾爱音乐合集.json",
             "jar": "./jar/spider.jar"
         },
+        
+        {
+            "key": "drpy_js_酷狗MV",
+            "name": "酷狗MV[js]",
+            "type": 3,
+            "api": "./JS/js/drpy2.min.js",
+            "ext": "./JS/lib/酷狗MV.js"
+        },
                
                {
             "key": "kqmv",
@@ -44,7 +52,15 @@
             "type": 3,
             "api": "./JS/js/ddmv_open.js"
         },
-               
+  {
+      "key": "MV大全",
+      "name": "🎶TH┃明星MV",
+      "type": 4,
+      "api": "http://120.53.102.254/dsp/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },             
 {
     "key": "酷奇MV",
     "name": "🎸酷奇MV",

@@ -11,6 +11,51 @@
     ],
     "spider": "./jar/spider.jar",
     "sites": [
+    
+    {
+            "key": "好趣网",
+            "name": "🎦┃电视┃好趣网",
+            "type": 3,
+            "api": "./JS/lib/drpy2.min-1.js",
+            "ext": "./JS/js/好趣网.js"
+        },
+    
+        {"key": "cntv-news","name": "聚视丨新闻","type": 3,"api": "./JS/cntv/cntv_news.js"},  
+    {"key": "cntv","name": "聚视丨综合","type": 3,"api": "./JS/cntv/cntv_open.js"}, 
+    {"key": "cntv_cctvdy","name": "聚视丨电影","type": 3,"api": "./JS/cntv/cntv_cctvdy.js"},  
+    {"key": "cntv_cctvdy2","name": "聚视丨电影2","type": 3,"api": "./JS/cntv/m1905.js"}, 
+    {"key": "cntv_cctvjsh","name": "聚视丨军事","type": 3,"api": "./JS/cntv/cntv_cctvjsh.js"}, 
+    {"key": "cntv_cctvkj","name": "聚视丨科教","type": 3,"api": "./JS/cntv/cntv_cctvkj.js"}, 
+    {"key": "cntv_cctvny","name": "聚视丨农业","type": 3,"api": "./JS/cntv/cntv_cctvny.js"},
+    {"key": "cntv_cctvse","name": "聚视丨少儿","type": 3,"api": "./JS/cntv/cntv_cctvse.js"},
+    {"key": "cntv_cctvty","name": "聚视丨体育","type": 3,"api": "./JS/cntv/cntv_cctvty.js"},
+    {"key": "cntv_cctvxq","name": "聚视丨戏曲","type": 3,"api": "./JS/cntv/cntv_cctvxq.js"},
+    {"key": "cntv_cctvyy","name": "聚视丨音乐","type": 3,"api": "./JS/cntv/cntv_cctvyy.js"},
+    {"key": "cntv_cctvzy","name": "聚视丨综艺","type": 3,"api": "./JS/cntv/cntv_cctvzy.js"},
+    
+    {
+            "key": "lf_js_lf_live",
+            "name": "🎦┃电视┃自用",
+            "type": 3,
+            "api": "./JS/js/lf_live_min.js",
+            "style": {
+                "type": "oval"
+            },
+            "searchable": 1,
+            "changeable": 0,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "./tv/lf_live.txt",
+            "jar": "./jar/spider1.jar"
+        },
+        
+        {
+            "key": "cntvw",
+            "name": "🎦┃电视┃央视网",
+            "type": 3,
+            "api": "./JS/lib/cntv_open.js",
+            "jar": "./jar/f.jar"
+        },
         {
             "key": "py_cctv1",
             "name": "🌟┃央视┃爱央视(py)",
@@ -192,35 +237,7 @@
             "ext": "./json/央视大全.json"
         },
         
-        {
-            "key": "lf_js_lf_live",
-            "name": "🎦┃电视┃自用",
-            "type": 3,
-            "api": "./JS/js/lf_live_min.js",
-            "style": {
-                "type": "oval"
-            },
-            "searchable": 1,
-            "changeable": 0,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "./tv/lf_live.txt",
-            "jar": "./jar/spider1.jar"
-        },
-        {
-            "key": "好趣网",
-            "name": "🎦┃电视┃好趣网",
-            "type": 3,
-            "api": "./JS/lib/drpy2.min-1.js",
-            "ext": "./JS/js/好趣网.js"
-        },
-        {
-            "key": "cntv",
-            "name": "🎦┃电视┃央视网",
-            "type": 3,
-            "api": "./JS/lib/cntv_open.js",
-            "jar": "./jar/f.jar"
-        },
+        
        
         {
             "key": "應用商店",

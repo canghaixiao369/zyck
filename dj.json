@@ -11,6 +11,26 @@
     ],
     "spider": "./jar/spider.jar",
     "sites": [
+    
+    { "key": "短剧tv-1",
+            "name": "🔥短剧1",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "jar": "./jar/custom_spider_20240407_4_0426_.tms;md5;56d4b7bb86ba0459dc4c56f0f2aa06c4",
+            "ext": {
+                "搜索链接": "http://www.duanjutv.cc/vodsearch/{wd}----------{pg}---.html",
+                "线路标题": "<h3*>&&</h3>[排序:速播云>速播m3u8>光速m3u8]",
+                "线路数组": "\"more text-muted pull-right\">&&</ul>[不包含:备用#金鹰云]",
+                "播放数组": "\"more text-muted pull-right\">&&</ul>",
+                "播放链接": "http+://www.duanjutv.cc+href='&&'",
+                "分类": "抖音短剧$20#快手短剧$21#视频号短剧$22#热播短剧$23",
+                "分类链接": "http://www.duanjutv.cc/vodtype/{cateId}-{catePg}.html;;m"
+            }
+        },
+        {"key":"短剧天堂","name":"🔥短剧天堂","type":3,"api":"csp_XBPQ",
+       "jar": "./jar/custom_spider_20240407_4_0426_.tms;md5;56d4b7bb86ba0459dc4c56f0f2aa06c4", "ext":{"简介":"沧海笑祝您观影愉快","搜索url":"https://duanjutt.tv/vodsearch/{wd}-----------{pg}---.html","分类url":"https://duanjutt.tv/vodshow/{cateId}--------{catePg}---.html","免嗅": "0","嗅探词": ".mp4#.m3u8#.flv","分类":"逆袭$1#甜宠$2#虐恋$3#穿越$4#重生$5","分类数组":"col-lg-5 col-md-5 col-sm-5 col-xs-3\">&&</li>","分类ID":"/vodtype/&&.html"}},
+ {"key":"短剧网","name":"🔥短剧网","type":3,"api":"csp_XBPQ","jar": "./jar/custom_spider_20240407_4_0426_.tms;md5;56d4b7bb86ba0459dc4c56f0f2aa06c4","ext":{"简介":"沧海笑祝您观影愉快","分类":"逆袭$逆袭#甜宠$甜宠#虐恋$虐恋#穿越$穿越#重生$重生","分类url":"http://2ju.cc/show/duanju/class/{cateId}/page/{catePg}.html"}}, 
+        
         {
             "key": "csp_YQKan",
             "name": "🌸┃短剧┃一起看🌸",
