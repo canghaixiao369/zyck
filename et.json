@@ -1,5 +1,6 @@
 {
     "spider": "./jar/spider.jar",
+    "logo": "./logo3.gif",
     "lives": [
         {
             "name": "redirect",

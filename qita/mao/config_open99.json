@@ -1,0 +1,24 @@
+{
+"video": {"sites": [
+{"key":"mtsp_open","name":"成人 | 蜜桃","type":3,"api":"./mtsp_open.js"},
+{"key":"18av_open","name":"成人 | 18av","type":3,"api":"./18av_open.js"},
+{"key":"18a_open","name":"成人 | 18a","type":3,"api":"./18a_open.js"},
+{"key":"apilj","name":"成人 | 十八","type":3,"api":"./caiji.js","ext":"https://apilj.com/api.php/provide/vod/at/json/"},
+{"key":"kulunli","name":"成人 | 酷伦理","type":3,"api":"./caiji.js","ext":"https://api.kudian70.com/api.php/provide/vod/"},
+{"key":"apilj.com","name":"成人 | 成人03","type":3,"api":"./caiji.js","ext":"http://apilj.com/api.php/provide/vod/at/json/"},
+{"key":"91md.me","name":"成人 | 成人05","type":3,"api":"./caiji.js","ext":"http://91md.me/api.php/provide/vod/"},
+{"key":"api.sexnguon.com","name":"成人 | 成人08","type":3,"api":"./caiji.js","ext":"http://api.sexnguon.com/api.php/provide/vod/"},
+{"key":"feifei67.com","name":"成人 | 成人09","type":3,"api":"./caiji.js","ext":"http://www.feifei67.com/api.php/provide/vod/"},
+{"key":"fhapi9.com","name":"成人 | 成人12","type":3,"api":"./caiji.js","ext":"http://fhapi9.com/api.php/provide/vod/"},
+{"key":"madouse.la","name":"成人 | 成人27","type":3,"api":"./caiji.js","ext":"http://madouse.la/api.php/provide/vod/"},
+{"key":"api.maozyapi.com","name":"成人 | 成人33","type":3,"api":"./caiji.js","ext":"https://api.maozyapi.com/inc/apijson_vod.php"},
+{"key":"888dav.com","name":"成人 | 成人35","type":3,"api":"./caiji.js","ext":"https://www.888dav.com/api.php/provide/vod/"},
+{"key":"mgzyz1.com","name":"成人 | 成人36","type":3,"api":"./caiji.js","ext":"https://mgzyz1.com/api.php/provide/vod/"},
+{"key":"caiji.huakuiapi.com","name":"成人 | 成人37","type":3,"api":"./caiji.js","ext":"https://caiji.huakuiapi.com/inc/apijson_vod.php"},
+{"key":"lbapi9.com","name":"成人 | 成人43","type":3,"api":"./caiji.js","ext":"https://lbapi9.com/api.php/provide/vod/"},
+{"key":"apittzy.com","name":"成人 | 成人44","type":3,"api":"./caiji.js","ext":"https://apittzy.com/api.php/provide/vod/"},
+{"key":"kkzy.me","name":"成人 | 成人45","type":3,"api":"./caiji.js","ext":"https://kkzy.me/api.php/provide/vod/"},
+{"key":"sewozyapi.com","name":"成人 | 成人50","type":3,"api":"./caiji.js","ext":"https://sewozyapi.com/api.php/provide/vod/"},
+{"key":"api.apilyzy.com","name":"成人 | 成人52","type":3,"api":"./caiji.js","ext":"https://api.apilyzy.com/api.php/provide/vod/"}
+
+]}}

@@ -5,13 +5,13 @@
             "type": 0,
             "url": "./tv/mtv.txt",
             "playerType": 1,
-            "epg": "http://diyp.112114.xyz/?ch={name}&date={date}"
-            
+            "epg": "http://diyp.112114.xyz/?ch={name}&date={date}",
+  "logo": "https://epg.112114.xyz/logo/{name}.png"          
         }
     ],
     "spider": "./jar/spider.jar",
     
-    "logo": "./tw.jpg",
+    "logo": "./logo4.gif",
     "sites": [
 
  {
@@ -101,14 +101,14 @@
 		},
 	{
             "key": "drpy_js_酷6网",
-            "name": "酷6网[js]",
+            "name": "🎋酷6网[js]",
             "type": 3,
             "api": "./JS/js/drpy2.min.js",
             "ext": "./JS/lib/酷6网.js"
         },	
 		{
             "key": "drpy_js_看了么",
-            "name": "看了么[js]",
+            "name": "🌿看了么[js]",
             "type": 3,
             "api": "./JS/js/drpy2.min.js",
             "ext": "./JS/lib/看了么.js"
@@ -116,19 +116,53 @@
         
         {
             "key": "drpy_js_广播迷FM",
-            "name": "广播迷FM[js]",
+            "name": "🪴广播迷FM[js]",
             "type": 3,
             "api": "./JS/js/drpy2.min.js",
             "ext": "./JS/lib/广播迷FM.js"
         },
       {
             "key": "drpy_js_看看屋",
-            "name": "看看屋[js]",
+            "name": "🌼看看屋[js]",
             "type": 3,
             "api": "./JS/js/drpy2.min.js",
             "ext": "./JS/lib/看看屋.js"
         },  
-       {"key":"drpy_js_网易公版影像","name":"聚合 | 网易公版影像[js]","type":3,"api":"./JS/js/drpy2.min.js","ext":"./JS/lib/网易公版影像.js"}, 
+       {"key":"drpy_js_网易公版影像","name":"🍁网易","type":3,"api":"./JS/js/drpy2.min.js","ext":"./JS/lib/网易公版影像.js"}, 
+      {
+            "key": "drpy_js_Alist",
+            "name": "🍃Alist[js]",
+            "type": 3,
+            "api": "./JS/js/alist.min.js",
+            "ext": "./JS/lib/alist.conf"
+        }, 
+    
+    {
+      "key": "lzzywdj",
+      "name": "️🎄量子短剧",
+      "type": 1,
+      "api": "http://cj.lziapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "categories": [
+ 
+            "短剧"
+        
+      ]
+    },   
+    {      "key": "wujingdj",    "name": "️🌱五经短剧",      "type": 1,     "api": "https://api.wujinapi.me/api.php/provide/vod/?ac=list",      "searchable": 1,   "quickSearch": 1,   "filterable": 1,   "categories": [        "短剧"   ]   },      
+    
+   {      "key": "jisuzydj",    "name": "️🪴极速短剧",      "type": 1,    "api": " https://jszyapi.com/api.php/provide/vod ",       "searchable": 1,   "quickSearch": 1,   "filterable": 1,   "categories": [        "短剧"   ]   },
+    
+    
+          {      "key": "haohuaziyuandj",    "name": "️🍂豪华短剧",      "type": 1,    "api":  "   https://hhzyapi.com/api.php/provide/vod/?ac=videolistt   ",       "searchable": 1,   "quickSearch": 1,   "filterable": 1,   "categories": [        "短剧"   ]   },
+             {      "key": "snzydj",    "name": "️🍄索尼短剧",      "type": 1,    "api":  "  https://suoniapi.com/api.php/provide/vod/?ac=list   ",       "searchable": 1,   "quickSearch": 1,   "filterable": 1,   "categories": [        "爽文短剧"   ]   },
+    
+      {      "key": "fszydj",    "name": "️🐤飞速短剧",      "type": 1,    "api":  " https://www.feisuzyapi.com/api.php/provide/vod/?ac=list   ",       "searchable": 1,   "quickSearch": 1,   "filterable": 1,   "categories": [        "短剧"   ]   },     
+          
+             
+                   
     {
       "key": "drpy_js_短视频",
       "name": "📲┃短视频[js]",
@@ -771,7 +805,7 @@
                 "欧美综艺"
             ]
         },
-        
+        {"key": "csp_优质","name": "🔥优质2","type": 1,"api": "https://api.1080zyku.com/inc/apijson.php?ac=list ","searchable": 1,"quickSearch": 0,"filterable": 1,"categories": ["动作片","喜剧片","科幻片","奇幻片","恐怖片","灾难片","悬疑片","爱情片","战争片","纪录片","动画电影","大陆剧","欧美剧","港澳剧","韩剧","泰剧","台湾剧","日剧","海外剧","动画片","动漫","国产动漫","日韩动漫","欧美动漫","港台动漫","海外动漫","大陆综艺","港台综艺","日韩综艺","欧美综艺","搞笑","音乐"]},
         {
             "key": "csp_xml_ikun",
             "name": "🍆爱坤",
@@ -891,11 +925,23 @@
             "api": "https://xkanzy10.com/api.php/provide/vod"
         },
         {
+      "key": "csp_beijihu",
+      "name": "🎪┃极狐┃影视",
+      "type": 3,
+      "api": "csp_AppYsV2",
+       "jar": "./jar/custom_spider.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://www.kuin.one/api.php/app/"
+    },
+        
+        {
             "key": "迪迪",
             "name": "🌈┃迪迪┃App",
             "type": 3,
             "api": "csp_AppYsV2",
-            "jar": "./jar/fty.jar",
+            "jar": "./jar/custom_spider.jar",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 0,
@@ -906,7 +952,7 @@
             "name": "🐭影视聚合┃解析",
             "type": 3,
             "api": "csp_AppYsV2",
-            "jar": "./jar/fty.jar",
+            "jar": "./jar/custom_spider.jar",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
