@@ -3,7 +3,7 @@
         {
             "name": "沧海笑",
             "type": 0,
-            "url": "./tv/mtv.txt",
+            "url": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/main/tv/mtv.txt",
             "playerType": 1,
             "epg": "http://diyp.112114.xyz/?ch={name}&date={date}",
             "logo": "https://epg.112114.xyz/logo/{name}.png"
@@ -20,7 +20,6 @@
             "jar": "./jar/tw2.jar",
             "ext": "./JS/lib/腾云驾雾.js"
         },
-        
         {
             "key": "csp_KungFu404",
             "name": "🔥设置Token",
@@ -132,7 +131,7 @@
         },
         {
             "key": "drpy_js_广播迷FM",
-            "name": "🪴广播迷FM[js]",
+            "name": "🍁广播迷FM[js]",
             "type": 3,
             "api": "./JS/js/drpy2.min.js",
             "ext": "./JS/lib/广播迷FM.js"
@@ -374,7 +373,7 @@
         
   { 
   "key": "新视觉影院",
-   "name": "🪴新视觉短剧",
+   "name": "🍁新视觉短剧",
     "type":3,
   "api": "csp_XBPQ",
   "jar": "./jar/XBPQ.jar",
@@ -395,7 +394,7 @@
         },
         {
             "key": "jisuzydj",
-            "name": "️🪴极速短剧",
+            "name": "️🍁极速短剧",
             "type": 1,
             "api": " https://jszyapi.com/api.php/provide/vod ",
             "searchable": 1,
