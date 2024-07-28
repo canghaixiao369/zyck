@@ -229,7 +229,7 @@
         },
         {
             "key": "csp_XBPQ_vstv",
-            "name": "🪲VS短剧",
+            "name": "🍓VS短剧",
             "type": 3,
             "api": "csp_XBPQ",
             "searchable": 1,
@@ -635,7 +635,7 @@
         },
         {
             "key": "360采集",
-            "name": "🪲360采集",
+            "name": "🍓360采集",
             "type": 1,
             "api": "https://360zy.com/api.php/provide/vod/at/json",
             "searchable": 1,
@@ -807,7 +807,7 @@
         },
         {
             "key": "nangua",
-            "name": "🪶南瓜影视[cat]",
+            "name": "🌹南瓜影视[cat]",
             "type": 3,
             "api": "./JS/ng_open.js",
             "jar": "./jar/f.jar"
@@ -1853,7 +1853,7 @@
         },
         {
             "key": "subaibai",
-            "name": "🪶素白白[cat]",
+            "name": "🌹素白白[cat]",
             "type": 3,
             "api": "./JS/subaibai_open.js",
             "jar": "./jar/f.jar"
