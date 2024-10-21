@@ -9,6 +9,51 @@
             "quickSearch": 1,
             "filterable": 1
         },
+{
+            "key": "乐播",
+            "name": "️♥乐播┃采集",
+            "type": 1,
+            "api": "https://lbapi9.com/api.php/provide/vod/",
+            "playUrl": "",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "categories": [
+                "亚洲情色",
+                "国产主播",
+                "国产自拍",
+                "无码专区",
+                "欧美性爱",
+                "熟女人妻",
+                "强奸乱伦",
+                "巨乳美乳",
+                "中文字幕",
+                "制服诱惑",
+                "女同性恋",
+                "卡通动画",
+                "视频伦理",
+                "少女萝莉",
+                "重口色情",
+                "人兽性交"
+            ]
+        },
+      {
+            "key": "xne ",
+            "name": "♥香奶┃采集 ",
+            "type": 0,
+            "api": "https://www.gdlsp.com/api/xml.php ",
+            "searchable": 1,
+            "changeable": 1
+        },  
+     {
+     "key":"易看资源-伦理",
+     "name":"易看资源-伦理",
+     "type":1,
+     "api":"https://api.yikanapi.com/api.php/provide/vod/",
+     "searchable":1,
+     "quickSearch":1
+     },   
+        
   {
       "key": "didizy.com",
       "name": "♥滴滴(直连)",
@@ -17,7 +62,14 @@
       "searchable": 1,
       "filterable": 1
     },      
-        
+  {
+            "key": "msv ",
+            "name": "美女┃采集 ",
+            "type": 0,
+            "api": "https://www.msnii.com/api/xml.php ",
+            "searchable": 1,
+            "changeable": 1
+        },      
    {
       "key": "155zy.com",
       "name": "♥155(直连)",
@@ -69,13 +121,33 @@
     },
         
     {
-      "key": "?番号资源",
-      "name": "😍番号资源",
-      "type": 1,
-      "api": "http://fhapi9.com/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1
-    },    
+            "key": "番外",
+            "name": "😍番外┃采集",
+            "type": 1,
+            "api": "http://fhapi9.com/api.php/provide/vod/",
+            "playUrl": "",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "categories": [
+                "群交淫乱",
+                "偷拍自拍",
+                "制服丝袜",
+                "无码专区",
+                "卡通动漫",
+                "中文字幕",
+                "欧美性爱",
+                "巨乳美乳",
+                "国产裸聊",
+                "国产自拍",
+                "国产盗摄",
+                "伦理三级",
+                "女同性恋",
+                "少女萝莉",
+                "人妖系列",
+                "虚拟VR"
+            ]
+        },
    {
       "key": "?花椒资源",
       "name": "😍花椒资源",
@@ -520,40 +592,40 @@
       "name": "*🔞美少女资源",
       "type": 0,
       "api": "https://www.msnii.com/api/xml.php",
-      "searchable": 0,
-      "quickSearch": 0
+      "searchable": 1,
+      "quickSearch": 1
     },
     {
       "key": "*淫水机资源",
       "name": "*🔞淫水机资源",
       "type": 0,
-      "api": "https://www.xrbsp.com/api/xml.php",
-      "searchable": 0,
-      "quickSearch": 0
+      "api": "https://www.xrbsp.com/api/xml.php ",
+      "searchable": 1,
+      "quickSearch": 1
     },
     {
       "key": "*香奶儿资源",
       "name": "*🔞香奶儿资源",
       "type": 0,
       "api": "https://www.gdlsp.com/api/xml.php",
-      "searchable": 0,
-      "quickSearch": 0
+      "searchable": 1,
+      "quickSearch": 1
     },
     {
       "key": "*白嫖资源",
       "name": "*🔞白嫖资源",
       "type": 0,
-      "api": "https://www.kxgav.com/api/xml.php",
-      "searchable": 0,
-      "quickSearch": 0
+      "api": "https://www.kxgav.com/api/xml.php ",
+      "searchable": 1,
+      "quickSearch": 1
     },
 {
       "key": "*大地资源",
       "name": "*🔞大地资源",
       "type": 0,
       "api": "https://dadiapi.com/api.php",
-      "searchable": 0,
-      "quickSearch": 0
+      "searchable": 1,
+      "quickSearch": 1
     },
 {
       "key": "(18+)天堂福利",

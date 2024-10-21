@@ -20,7 +20,16 @@
             "api": "./JS/lib/drpy2.min-1.js",
             "ext": "./JS/js/好趣网.js"
         },
-    
+    {
+    "key":"cctv",
+    "name":"🇨🇳┃央视频道┃大全",
+    "type":3,
+    "api":"csp_CCTV",
+    "jar": "./jar/HeChengChaXiu7.jar",
+    "searchable":0,
+    "filterable":0,
+    "ext":"./json/央视大全.json"
+    },
         {"key": "cntv-news","name": "聚视丨新闻","type": 3,"api": "./JS/cntv/cntv_news.js"},  
     {"key": "cntv","name": "聚视丨综合","type": 3,"api": "./JS/cntv/cntv_open.js"}, 
     {"key": "cntv_cctvdy","name": "聚视丨电影","type": 3,"api": "./JS/cntv/cntv_cctvdy.js"},  
