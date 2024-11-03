@@ -61,12 +61,12 @@
             "key": "hipy_js_采集之王[合]",
             "name": "🌾采集大全",
             "type": 3,
-            "api": "./JS/js/drpy.min.js",
+            "api": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/refs/heads/main/JS/js/drpy2.min.js",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
             "order_num": 210,
-            "ext": "./JS/js/采集之王[合].js?type=url&params=./json/采集静态.json"
+            "ext": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/refs/heads/main/yaoyao/lib/%E9%87%87%E9%9B%86%E4%B9%8B%E7%8E%8B%5B%E5%90%88%5D.js?type=url&params=https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/refs/heads/main/json/%E9%87%87%E9%9B%86%E9%9D%99%E6%80%81.json"
         },
         {
             "key": "hipy_js_啊哈DJ[听]",
