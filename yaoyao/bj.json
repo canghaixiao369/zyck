@@ -10,6 +10,18 @@
             "filterable": 1
         },
         
+        {
+			"key": "hipy_js_采集之王[合]0",
+			"name": "🏆采王道长",
+			"type": 3,
+			"api": "./JS/js/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./lib/采集之王[合].js?type=url&params=./json/采集静态.json"
+		},
+        
    {"key": "直转点",
        "name": "🏆熊大专享",
        "type": 3,

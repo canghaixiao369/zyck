@@ -21,9 +21,20 @@
             "quickSearch": 1,
             "filterable": 1,
             "order_num": 0,
-            "jar": "./jar/ou.jar",
             "ext": "./JS/lib/腾云驾雾[官].js"
         },
+        
+        {
+			"key": "hipy_js_4K-AV",
+			"name": "🔥4K-AV(drpy_t3)",
+			"type": 3,
+			"api": "./JS/js/drpy2.min.js",
+			"searchable": 1,
+			"quickSearch": 1,
+			"filterable": 1,
+			"order_num": 0,
+			"ext": "./JS/lib/4K-AV.js"
+		},
         {
             "key": "csp_KungFu404",
             "name": "🔥设置Token",
@@ -612,11 +623,11 @@
             "key": "hipy_js_一起看",
             "name": "🍁一起看(drpy_t3)",
             "type": 3,
-            "api": "./JS/lib/drpy2.min.js",
+            "api": "./JS/js/drpy2.min.js",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "order_num": 16,
+            "order_num": 0,
             "ext": "./JS/js/一起看.js"
         },
         {
@@ -831,7 +842,7 @@
             "type": 3,
             "playUrl": "https://www.pouyun.com/?url=",
             "jar": "./jar/spider.jar",
-            "api": "./JS/lib/drpy2.min.js",
+            "api": "./JS/js/drpy2.min.js",
             "ext": "./JS/js/youku.js"
         },
         {
@@ -840,7 +851,7 @@
             "type": 3,
             "jar": "./jar/spider.jar",
             "playUrl": "https://jx.xmflv.com/?url=",
-            "api": "./JS/lib/drpy2.min.js",
+            "api": "./JS/js/drpy2.min.js",
             "ext": "./JS/js/奇珍异兽.js"
         },
         {
@@ -849,14 +860,14 @@
             "type": 3,
             "playUrl": "https://jx.xmflv.com/?url=",
             "jar": "./jar/spider.jar",
-            "api": "./JS/lib/drpy2.min.js",
+            "api": "./JS/js/drpy2.min.js",
             "ext": "./JS/js/百忙无果.js"
         },
         {
             "key": "drpy_js_菜狗",
             "name": "🇹┃搜狗官┃秒播",
             "type": 3,
-            "api": "./JS/lib/drpy2.min.js",
+            "api": "./JS/js/drpy2.min.js",
             "jar": "./jar/spider.jar",
             "ext": "./JS/lib/菜狗.js"
         },
@@ -2262,6 +2273,139 @@
     ],
     "wallpaper": "http://www.kf666888.cn/api/tvbox/img",
     "parses": [
+    
+          {
+			"name": "冰豆",
+			"url": "https://bd.jx.cn/?url=",
+			"type": 0,
+			"ext": {
+				"flag": [
+					"qiyi",
+					"imgo",
+					"爱奇艺",
+					"奇艺",
+					"qq",
+					"qq 预告及花絮",
+					"腾讯",
+					"youku",
+					"优酷",
+					"pptv",
+					"PPTV",
+					"letv",
+					"乐视",
+					"leshi",
+					"mgtv",
+					"芒果",
+					"sohu",
+					"xigua",
+					"fun",
+					"风行"
+				]
+			},
+			"header": {
+				"User-Agent": "Mozilla/5.0"
+			}
+		},		
+          {
+			"name": "8090g",
+			"url": "https://www.8090g.cn/jiexi/?url=",
+			"type": 0,
+			"ext": {
+				"flag": [
+					"qiyi",
+					"imgo",
+					"爱奇艺",
+					"奇艺",
+					"qq",
+					"qq 预告及花絮",
+					"腾讯",
+					"youku",
+					"优酷",
+					"pptv",
+					"PPTV",
+					"letv",
+					"乐视",
+					"leshi",
+					"mgtv",
+					"芒果",
+					"sohu",
+					"xigua",
+					"fun",
+					"风行"
+				]
+			},
+			"header": {
+				"User-Agent": "Mozilla/5.0"
+			}
+		},
+		
+		 {
+			"name": "play",
+			"url": "https://www.playm3u8.cn/jiexi.php?url=",
+			"type": 0,
+			"ext": {
+				"flag": [
+					"qiyi",
+					"imgo",
+					"爱奇艺",
+					"奇艺",
+					"qq",
+					"qq 预告及花絮",
+					"腾讯",
+					"youku",
+					"优酷",
+					"pptv",
+					"PPTV",
+					"letv",
+					"乐视",
+					"leshi",
+					"mgtv",
+					"芒果",
+					"sohu",
+					"xigua",
+					"fun",
+					"风行"
+				]
+			},
+			"header": {
+				"User-Agent": "Mozilla/5.0"
+			}
+		},
+		{
+			"name": "m3u8TV",
+			"url": "https://jx.m3u8.tv/jiexi/?url=",
+			"type": 0,
+			"ext": {
+				"flag": [
+					"qiyi",
+					"imgo",
+					"爱奇艺",
+					"奇艺",
+					"qq",
+					"qq 预告及花絮",
+					"腾讯",
+					"youku",
+					"优酷",
+					"pptv",
+					"PPTV",
+					"letv",
+					"乐视",
+					"leshi",
+					"mgtv",
+					"芒果",
+					"sohu",
+					"xigua",
+					"fun",
+					"风行"
+				]
+			},
+			"header": {
+				"User-Agent": "Mozilla/5.0"
+			}
+		},
+    
+          
+    
         {
       "name": "小蜜蜂",
       "url": "https://jx.xmflv.cc/?url=",
