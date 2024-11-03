@@ -1,7 +1,5 @@
 {
     "sites": [
-        
-        //
         {
             "key": "csp_Kunyu77",
             "name": "👒酷云七七〔公众号：人人资源〕",
@@ -16,12 +14,12 @@
 			"key": "hipy_js_采集之王[合]0",
 			"name": "🏆采王道长",
 			"type": 3,
-			"api": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/refs/heads/main/JS/js/drpy2.min.js",
+			"api": "./JS/js/drpy2.min.js",
 			"searchable": 1,
 			"quickSearch": 1,
 			"filterable": 1,
 			"order_num": 0,
-			"ext": "https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/refs/heads/main/yaoyao/lib/%E9%87%87%E9%9B%86%E4%B9%8B%E7%8E%8B%5B%E5%90%88%5D.js?type=url&params=https://ghcy.eu.org/https://raw.githubusercontent.com/canghaixiao369/zyck/refs/heads/main/yaoyao/json/%E9%87%87%E9%9B%86%E9%9D%99%E6%80%81.json"
+			"ext": "./lib/采集之王[合].js?type=url&params=../json/采集静态.json"
 		},
         
    {"key": "直转点",
